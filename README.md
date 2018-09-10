@@ -1,2 +1,2 @@
 
-![picture](../img/ERD.png)
+![picture](src/img/ERD.png)
