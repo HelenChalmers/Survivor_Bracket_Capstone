@@ -1,0 +1,295 @@
+{
+    "cast": [
+    {
+        "castName": "Natalia Azoqu",
+        "castBio": "25, Industrial Engineer from Irvine, California",
+        "castImg": "",
+        "tribe": "Goliath",
+        "castPlacement": 2,
+        "Id": 1
+        
+    },
+    {
+        "castName": "Carl Boudreaux",
+        "castBio": "41, Truck Driver from Houston, Texas",
+        "castImg": "",
+        "tribe": "David",
+        "castPlacement": "2",
+        "Id": 2
+    },
+    {
+        "castName": "Natalie Cole",
+        "castBio": "56, Publishing CEO from Los Angeles",
+        "castImg": "",
+        "tribe": "Goliath",
+        "castPlacement": "2",
+        "Id": 3
+    },
+    {
+        "castName": "Jeremy Crawford",
+        "castBio": "40, Attorney from New York City",
+        "castImg": "",
+        "tribe": "Goliath",
+        "castPlacement": "2",
+        "Id": 4
+    },
+    {
+        "castName": "Pat Cusack",
+        "castBio": "40, Maintenance Manager from Watervliet, New York",
+        "castImg": "",
+        "tribe": "David",
+        "castPlacement": "2",
+        "Id": 5
+    },
+    {
+        "castName": "John Hennigan",
+        "castBio": "38, Pro Wrestler  from Los Angeles",
+        "castImg": "",
+        "tribe": "Goliath",
+        "castPlacement": "2",
+        "Id": 6
+    },
+    {
+        "castName": "Christian Hubicki",
+        "castBio": "32, Robotics Scientist from Tallahassee, Florida",
+        "castImg": "",
+        "tribe": "David",
+        "castPlacement": "2",
+        "Id": 7
+    },
+    {
+        "castName": "Kara Kay",
+        "castBio": "30, Realtor from San Diego",
+        "castImg": "",
+        "tribe": "Goliath",
+        "castPlacement": "2",
+        "Id": 8
+    },
+    {
+        "castName": "Angelina Keeley",
+        "castBio": "28, Financial Consultant from San Clemente, California",
+        "castImg": "",
+        "tribe": "Goliath",
+        "castPlacement": "2",
+        "Id": 9
+    },
+    {
+        "castName": "Alec Merlino",
+        "castBio": "24, Bartender from San Clemente, California",
+        "castImg": "",
+        "tribe": "Goliath",
+        "castPlacement": "2",
+        "Id": 10
+    },
+    {
+        "castName": "Bi Nguyen",
+        "castBio": "28, MMA Fighter from Houston",
+        "castImg": "",
+        "tribe": "David",
+        "castPlacement": "2",
+        "Id": 11
+    },
+    
+    {
+        "castName": "Elizabeth Olson",
+        "castBio": "31, Kitchen Staff from Longview, Texas",
+        "castImg": "",
+        "tribe": "David",
+        "castPlacement": "2",
+        "Id": 12
+    },
+    {
+        "castName": "Gabby Pascuzzi",
+        "castBio": "25, Technical Writer from Denver",
+        "castImg": "",
+        "tribe": "David",
+        "castPlacement": "2",
+        "Id": 13
+    },
+    {
+        "castName": "Jessica Peet",
+        "castBio": "19, Waitress from Lakeland, Florida",
+        "castImg": "",
+        "tribe": "David",
+        "castPlacement": "2",
+        "Id": 14
+    },
+    {
+        "castName": "Alison Raybould",
+        "castBio": "28, Physician from Chapel Hill, North Carolina",
+        "castImg": "",
+        "tribe": "Goliath",
+        "castPlacement": "2",
+        "Id": 15
+    },
+    {
+        "castName": "Dan Rengering",
+        "castBio": "27, S.W.A.T. Officer from Gainesville, Florida",
+        "castImg": "",
+        "tribe": "Goliath",
+        "castPlacement": "2",
+        "Id": 16
+    },
+    {
+        "castName": "Davie Rickenbacker",
+        "castBio": "30, Social Media Manager from Atlanta, Georiga",
+        "castImg": "",
+        "tribe": "David",
+        "castPlacement": "2",
+        "Id": 17
+    },
+    {
+        "castName": "Lyrsa Torres",
+        "castBio": "36, Airline Agent from Boston",
+        "castImg": "",
+        "tribe": "David",
+        "castPlacement": "2",
+        "Id": 18
+    },
+    {
+        "castName": "Nick Wilson",
+        "castBio": "27, Public Defender from Williamsburg, Kentucky",
+        "castImg": "",
+        "tribe": "David",
+        "castPlacement": "2",
+        "Id": 19
+    },
+    {
+        "castName": "Mike White",
+        "castBio": "47, Film Maker from Los Angeles",
+        "castImg": "",
+        "tribe": "Goliath",
+        "castPlacement": "2",
+        "Id": 20
+    }
+    ],
+        "merge": [
+            {
+                "Id": 1,
+                "mergeName": "Winner"
+            },
+            {
+                "Id": 2,
+                "mergeName": "Final 4"
+
+            },
+            {
+                "Id": 3,
+                "mergeName": "PostMerge"
+            },
+            {
+                "Id": 4,
+                "mergeName": "PreMerge"
+            }
+        ],
+       "placement_merge": [
+            {
+                "Placement": 1,
+                "mergeId": 1,
+                "mergeName": "Winner"
+            },
+            {
+                "Placement": 2,
+                "mergeId": 2,
+                "mergeName": "Final 4"
+            },
+            {
+                "Placement": 3,
+                "mergeId": 2,
+                "mergeName": "Final 4"
+            },
+            {
+                "Placement": 4,
+                "mergeId": 2,
+                "mergeName": "Final 4"
+            },
+            {
+                "Placement": 5,
+                "mergeId": 3,
+                "mergeName": "PostMerge"
+            },
+            {
+                "Placement": 6,
+                "mergeId": 3,
+                "mergeName": "PostMerge"
+            },
+            {
+                "Placement": 7,
+                "mergeId": 3,
+                "mergeName": "PostMerge"
+            },
+            {
+                "Placement": 8,
+                "mergeId": 3,
+                "mergeName": "PostMerge"
+            },
+            {
+                "Placement": 9,
+                "mergeId": 3,
+                "mergeName": "PostMerge"
+            },
+            {
+                "Placement": 10,
+                "mergeId": 3,
+                "mergeName": "PostMerge"
+            },
+            {
+                "Placement": 11,
+                "mergeId": 3,
+                "mergeName": "PostMerge"
+            },
+            {
+                "Placement": 12,
+                "mergeId": 3,
+                "mergeName": "PostMerge"
+            },
+            {
+                "Placement": 13,
+                "mergeId": 3,
+                "mergeName": "PostMerge"
+            },
+            {
+                "Placement": 14,
+                "mergeId": 4,
+                "mergeName": "PreMerge"
+            },
+            {
+                "Placement": 15,
+                "mergeId": 4,
+                "mergeName": "PreMerge"
+            },
+            {
+                "Placement": 16,
+                "mergeId": 4,
+                "mergeName": "PreMerge"
+            },
+            {
+                "Placement": 17,
+                "mergeId": 4,
+                "mergeName": "PreMerge"
+            },
+            {
+                "Placement": 18,
+                "mergeId": 4,
+                "mergeName": "PreMerge"
+            },
+            {
+                "Placement": 19,
+                "mergeId": 4,
+                "mergeName": "PreMerge"
+            },
+            {
+                "Placement": 20,
+                "mergeId": 4,
+                "mergeName": "PreMerge"
+            }
+        ],
+
+        "user": [
+            
+        ],
+        "user_prediction": [
+
+
+        ]
+}
