@@ -18,11 +18,11 @@ export default class ApplicationViews extends Component {
 <wrapper id="predictionListWrapper">
 <Table id="predictionTable">
         <thead>
-          <tr>
-            <th>Placement</th>
+          <tr id="predHead">
+            <th class="predictionHeader">Placement</th>
             <th></th>
-            <th>Cast Members</th>
-            <th>Username</th>
+            <th class="predictionHeader">Cast Members</th>
+            <th class="predictionHeader">Username</th>
           </tr>
         </thead>
         <tbody>
@@ -38,7 +38,7 @@ export default class ApplicationViews extends Component {
             </Input>
           </FormGroup>
 </td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">2</th>
@@ -50,7 +50,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">3</th>
@@ -62,7 +62,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">4</th>
@@ -74,7 +74,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">5</th>
@@ -86,7 +86,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">6</th>
@@ -98,7 +98,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">7</th>
@@ -110,7 +110,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">8</th>
@@ -122,7 +122,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">9</th>
@@ -134,7 +134,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">10</th>
@@ -146,7 +146,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">11</th>
@@ -158,7 +158,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">12</th>
@@ -170,7 +170,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">13</th>
@@ -182,7 +182,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">14</th>
@@ -194,7 +194,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">15</th>
@@ -206,7 +206,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">16</th>
@@ -218,7 +218,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">17</th>
@@ -230,7 +230,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">18</th>
@@ -242,7 +242,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">19</th>
@@ -254,7 +254,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">20</th>
@@ -266,7 +266,7 @@ export default class ApplicationViews extends Component {
               <option value="static">"static"</option>
             </Input>
           </FormGroup></td>
-            <td><button>Submit</button></td>
+            <td><button class="submit_btn">Submit</button></td>
           </tr>
           
         </tbody>
