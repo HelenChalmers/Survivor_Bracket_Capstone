@@ -14,7 +14,7 @@
         "castBio": "41, Truck Driver from Houston, Texas",
         "castImg": "",
         "tribe": "David",
-        "castPlacement": "2",
+        "castPlacement": 18,
         "Id": 2
     },
     {
@@ -22,7 +22,7 @@
         "castBio": "56, Publishing CEO from Los Angeles",
         "castImg": "",
         "tribe": "Goliath",
-        "castPlacement": "2",
+        "castPlacement": 1,
         "Id": 3
     },
     {
@@ -30,7 +30,7 @@
         "castBio": "40, Attorney from New York City",
         "castImg": "",
         "tribe": "Goliath",
-        "castPlacement": "2",
+        "castPlacement": 17,
         "Id": 4
     },
     {
@@ -38,7 +38,7 @@
         "castBio": "40, Maintenance Manager from Watervliet, New York",
         "castImg": "",
         "tribe": "David",
-        "castPlacement": "2",
+        "castPlacement": 3,
         "Id": 5
     },
     {
@@ -46,7 +46,7 @@
         "castBio": "38, Pro Wrestler  from Los Angeles",
         "castImg": "",
         "tribe": "Goliath",
-        "castPlacement": "2",
+        "castPlacement": 19,
         "Id": 6
     },
     {
@@ -54,7 +54,7 @@
         "castBio": "32, Robotics Scientist from Tallahassee, Florida",
         "castImg": "",
         "tribe": "David",
-        "castPlacement": "2",
+        "castPlacement": 16,
         "Id": 7
     },
     {
@@ -62,7 +62,7 @@
         "castBio": "30, Realtor from San Diego",
         "castImg": "",
         "tribe": "Goliath",
-        "castPlacement": "2",
+        "castPlacement": 4,
         "Id": 8
     },
     {
@@ -70,7 +70,7 @@
         "castBio": "28, Financial Consultant from San Clemente, California",
         "castImg": "",
         "tribe": "Goliath",
-        "castPlacement": "2",
+        "castPlacement": 14,
         "Id": 9
     },
     {
@@ -78,7 +78,7 @@
         "castBio": "24, Bartender from San Clemente, California",
         "castImg": "",
         "tribe": "Goliath",
-        "castPlacement": "2",
+        "castPlacement": 12,
         "Id": 10
     },
     {
@@ -86,7 +86,7 @@
         "castBio": "28, MMA Fighter from Houston",
         "castImg": "",
         "tribe": "David",
-        "castPlacement": "2",
+        "castPlacement": 13,
         "Id": 11
     },
     
@@ -95,7 +95,7 @@
         "castBio": "31, Kitchen Staff from Longview, Texas",
         "castImg": "",
         "tribe": "David",
-        "castPlacement": "2",
+        "castPlacement": 15,
         "Id": 12
     },
     {
@@ -103,7 +103,7 @@
         "castBio": "25, Technical Writer from Denver",
         "castImg": "",
         "tribe": "David",
-        "castPlacement": "2",
+        "castPlacement": 20,
         "Id": 13
     },
     {
@@ -111,7 +111,7 @@
         "castBio": "19, Waitress from Lakeland, Florida",
         "castImg": "",
         "tribe": "David",
-        "castPlacement": "2",
+        "castPlacement": 11,
         "Id": 14
     },
     {
@@ -119,7 +119,7 @@
         "castBio": "28, Physician from Chapel Hill, North Carolina",
         "castImg": "",
         "tribe": "Goliath",
-        "castPlacement": "2",
+        "castPlacement": 5,
         "Id": 15
     },
     {
@@ -127,7 +127,7 @@
         "castBio": "27, S.W.A.T. Officer from Gainesville, Florida",
         "castImg": "",
         "tribe": "Goliath",
-        "castPlacement": "2",
+        "castPlacement": 9,
         "Id": 16
     },
     {
@@ -135,7 +135,7 @@
         "castBio": "30, Social Media Manager from Atlanta, Georiga",
         "castImg": "",
         "tribe": "David",
-        "castPlacement": "2",
+        "castPlacement": 8,
         "Id": 17
     },
     {
@@ -143,7 +143,7 @@
         "castBio": "36, Airline Agent from Boston",
         "castImg": "",
         "tribe": "David",
-        "castPlacement": "2",
+        "castPlacement": 6,
         "Id": 18
     },
     {
@@ -151,7 +151,7 @@
         "castBio": "27, Public Defender from Williamsburg, Kentucky",
         "castImg": "",
         "tribe": "David",
-        "castPlacement": "2",
+        "castPlacement": 10,
         "Id": 19
     },
     {
@@ -159,7 +159,7 @@
         "castBio": "47, Film Maker from Los Angeles",
         "castImg": "",
         "tribe": "Goliath",
-        "castPlacement": "2",
+        "castPlacement": 7,
         "Id": 20
     }
     ],
@@ -186,109 +186,120 @@
             {
                 "Placement": 1,
                 "mergeId": 1,
-                "mergeName": "Winner"
+                "Id": 1
             },
             {
                 "Placement": 2,
-                "mergeId": 2,
-                "mergeName": "Final 4"
+                "mergeId": 2, 
+                "Id": 2
             },
             {
                 "Placement": 3,
                 "mergeId": 2,
-                "mergeName": "Final 4"
+                "Id": 3 
             },
             {
                 "Placement": 4,
                 "mergeId": 2,
-                "mergeName": "Final 4"
+                "Id": 4
             },
             {
                 "Placement": 5,
                 "mergeId": 3,
-                "mergeName": "PostMerge"
+                "Id": 5
             },
             {
                 "Placement": 6,
                 "mergeId": 3,
-                "mergeName": "PostMerge"
+                "Id": 6
             },
             {
                 "Placement": 7,
                 "mergeId": 3,
-                "mergeName": "PostMerge"
+                "Id": 7
             },
             {
                 "Placement": 8,
                 "mergeId": 3,
-                "mergeName": "PostMerge"
+                "Id": 8
             },
             {
                 "Placement": 9,
                 "mergeId": 3,
-                "mergeName": "PostMerge"
+                "Id": 9
             },
             {
                 "Placement": 10,
                 "mergeId": 3,
-                "mergeName": "PostMerge"
+                "Id": 10
             },
             {
                 "Placement": 11,
                 "mergeId": 3,
-                "mergeName": "PostMerge"
+                "Id": 11
             },
             {
                 "Placement": 12,
                 "mergeId": 3,
-                "mergeName": "PostMerge"
+                "Id": 12
             },
             {
                 "Placement": 13,
                 "mergeId": 3,
-                "mergeName": "PostMerge"
+                "Id": 13
             },
             {
                 "Placement": 14,
                 "mergeId": 4,
-                "mergeName": "PreMerge"
+                "Id": 14
             },
             {
                 "Placement": 15,
                 "mergeId": 4,
-                "mergeName": "PreMerge"
+                "Id": 15
             },
             {
                 "Placement": 16,
                 "mergeId": 4,
-                "mergeName": "PreMerge"
+                "Id": 16
             },
             {
                 "Placement": 17,
                 "mergeId": 4,
-                "mergeName": "PreMerge"
+                "Id": 17
             },
             {
                 "Placement": 18,
                 "mergeId": 4,
-                "mergeName": "PreMerge"
+                "Id": 18
             },
             {
                 "Placement": 19,
                 "mergeId": 4,
-                "mergeName": "PreMerge"
+                "Id": 19
             },
             {
                 "Placement": 20,
                 "mergeId": 4,
-                "mergeName": "PreMerge"
+                "Id": 20
             }
         ],
 
-        "user": [
+        "users": [
             
         ],
         "user_prediction": [
+            {
+                "userID": 1,
+                "SurvivorCastId": 1,
+                "Placement_MergeID": 18
+
+            },
+            {
+                "userID": 1,
+                "SurvivorCastId": 2,
+                "placementPredictionId": 20
+            }
 
 
         ]
