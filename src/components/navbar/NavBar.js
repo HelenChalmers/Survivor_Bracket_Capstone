@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLink, } from 'reactstrap';
 
+
 export default class NavBar extends React.Component {
   constructor(props) {
     super(props);
@@ -23,6 +24,14 @@ export default class NavBar extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+
+  handleLogout = (e) => {
+
+    sessionStorage.removeItem(
+      "credentials");
+  }
+
+
   render() {
     return (
       <div>
@@ -32,12 +41,14 @@ export default class NavBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/predictions/">My Prediction</NavLink>
+                <NavLink href="/predictions">My Prediction</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/cast_profiles">Cast Profiles</NavLink>
               </NavItem>
-              <button id="logoutButton">Logout</button>
+              <NavItem>
+                <NavLink  onClick={this.handleLogout} href="/login">Logout</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

@@ -1,5 +1,9 @@
-.loginForm {
-  align: center;
-  border: 20em, solid, black;
+#loginForm {
+  display: flex;
+  padding: 5em;
+  width: 400px;
+  height: 50%;
+  border: 5px solid black;
+  
 
 }

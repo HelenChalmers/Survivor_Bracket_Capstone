@@ -1,0 +1,12 @@
+#predictionListWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#predictionTable {
+    width: 75%;
+    border: 10px solid black;
+    margin-top: 30px;
+    
+
+}
