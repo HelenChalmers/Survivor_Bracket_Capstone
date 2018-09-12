@@ -37,7 +37,7 @@ export default class Login extends Component {
         e.preventDefault()
 
         let existingUser = {
-
+            
             email: this.state.email,
             password: this.state.password
 
@@ -49,16 +49,6 @@ export default class Login extends Component {
             })
             if (!userObject) {
                 alert("You've gotta dig deep, your info is incorrect")
-            // } else if (this.state.remember) {
-            //     localStorage.setItem(
-            //         "credentials",
-            //         JSON.stringify({
-            //             email: this.state.email,
-            //             password: this.state.password,
-            //             id: userObject.id
-            //         })
-            //     )
-                // this.props.history.push("/mainview")
                 
             } else { 
         /*
@@ -68,6 +58,8 @@ export default class Login extends Component {
         sessionStorage.setItem(
             "credentials",
             JSON.stringify({
+
+                
                 email: this.state.email,
                 password: this.state.password,
                 id: userObject.id

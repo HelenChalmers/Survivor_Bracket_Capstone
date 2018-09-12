@@ -10,9 +10,41 @@ export default class UserPredictionList extends Component {
 
   state = {
     cast: [],
-    predictions: []
+    predictions: [],
+    PlacementMerge: [],
+    userId: "",
+    CastId: "",
+    castName: "",
+    PlacementPredictionId: ""
 
   }
+
+  handleFieldChange = (evt) => {
+    const stateToChange = {}
+    stateToChange[evt.target.id] = evt.target.value
+    this.setState(stateToChange)
+  }
+
+  user = () => JSON.parse(sessionStorage.getItem("credentials"))
+
+  constructNewPrediction = (e) => {
+      let castMember = this.props.cast.find(c => c.castName === this.state.castName)
+      const newPrediction = {
+      
+        userId: this.user().id,
+        CastId: castMember.Id,
+        PlacementPredictionId: parseInt(e.target.parentElement.parentElement.children[0].textContent)
+    }
+    
+        this.setState({
+          userId: "",
+          CastId: "",
+          PlacementPredictionId: ""
+        })
+
+    this.props.addUserPrediction(newPrediction)
+  }
+
     
 
     render() {
@@ -21,38 +53,36 @@ export default class UserPredictionList extends Component {
         
 
         return (
-<wrapper id="predictionListWrapper">
-<Table id="predictionTable">
-        <thead>
-          <tr id="predHead">
-            <th class="predictionHeader">Placement</th>
-            <th></th>
-            <th class="predictionHeader">Cast Members</th>
-            <th class="predictionHeader">Username</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            this.props.PlacementMerge.map(pm =>
-          <tr>
-            <th scope="row">{pm.Placement}</th>
-            <td></td>
-            <td>
-            <FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-            
-            
-                            <option value="">Select a Cast Member</option>
-                        {
-                            this.props.cast.map(e => <option key={e.id} id={e.id}>{e.castName}</option>)
-                        }
-                        
-              
-            </Input>
-          </FormGroup>
-            </td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
+          <wrapper id="predictionListWrapper">
+              <Table id="predictionTable">
+                <thead>
+                  <tr id="predHead">
+                    <th className="predictionHeader">Placement</th>
+                    <th></th>
+                    <th className="predictionHeader">Cast Members</th>
+                    <th className="predictionHeader">Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {
+                    this.props.PlacementMerge.map(pm =>
+                    <tr>
+                          <th scope="row">{pm.Placement}</th>
+                          <td></td>
+                          <td>
+                          <FormGroup>
+                              <Input type="select" name="backdrop" id="castName" onChange={this.handleFieldChange}>
+                                    <option value="">Select a Cast Member</option>
+                                {
+                                    this.props.cast.map(e => <option key={e.Id} id={e.Id}>{e.castName}</option>)
+                                }
+                                
+                      
+                            </Input>
+                        </FormGroup>
+                        </td>
+                        <td><button type="submit" onClick={this.constructNewPrediction} className="submit_btn">Submit</button></td>
+                    </tr>
             )}
           </tbody>
           </Table>

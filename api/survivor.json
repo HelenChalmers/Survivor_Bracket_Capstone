@@ -315,14 +315,46 @@
   ],
   "predictions": [
     {
+      "id": 1,
       "userID": 1,
-      "SurvivorCastId": 1,
-      "Placement_MergeID": 18
+      "CastId": 1,
+      "PlacementPredictionId": 18
     },
     {
+      "id": 2,
       "userID": 1,
-      "SurvivorCastId": 2,
-      "placementPredictionId": 20
+      "CastId": 2,
+      "PlacementPredictionId": 20
+    },
+    {
+      "userId": 1,
+      "CastId": 2,
+      "PlacementPredictionId": 1,
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "CastId": 3,
+      "PlacementPredictionId": 1,
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "CastId": 7,
+      "PlacementPredictionId": 2,
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "CastId": 4,
+      "PlacementPredictionId": 7,
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "CastId": 3,
+      "PlacementPredictionId": 6,
+      "id": 7
     }
   ]
 }

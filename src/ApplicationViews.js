@@ -12,7 +12,8 @@ export default class ApplicationViews extends Component {
         cast: [],
         merge: [],
         PlacementMerge: [],
-        predictions: []
+        predictions: [],
+        users: []
     }
 
     addUserPrediction = prediction => PredictionManager.post(prediction)
@@ -20,7 +21,8 @@ export default class ApplicationViews extends Component {
     .then(predictions => this.setState({
         predictions: predictions
     }))
-    
+
+    //this grabs the arrays to pass down (PlacementMerge and Cast)
     componentDidMount(){
         CastManager.getAll().then(cast => {
             this.setState({
