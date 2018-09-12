@@ -12,8 +12,7 @@ export default class ApplicationViews extends Component {
         cast: [],
         merge: [],
         PlacementMerge: [],
-        predictions: [],
-        users: []
+        predictions: []
     }
 
     addUserPrediction = prediction => PredictionManager.post(prediction)
