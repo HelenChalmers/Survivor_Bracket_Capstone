@@ -8,6 +8,8 @@ import {
   Nav,
   NavItem,
   NavLink, } from 'reactstrap';
+  import './navbar.css'
+
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -23,21 +25,31 @@ export default class NavBar extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+
+  handleLogout = (e) => {
+
+    sessionStorage.removeItem(
+      "credentials");
+  }
+
+
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Survivor Bracket</NavbarBrand>
+        <Navbar color="#f6df93" light expand="md" id="navbar">
+          <NavbarBrand href="/" id="navbarbrand">Survivor Bracket</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/predictions/">My Prediction</NavLink>
+                <NavLink href="/predictions" class="navbarHeader">My Prediction</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/cast_profiles">Cast Profiles</NavLink>
+                <NavLink href="https://www.cbs.com/shows/survivor/cast/" target="_blank" class="navbarHeader">Cast Profiles</NavLink>
               </NavItem>
-              <button id="logoutButton">Logout</button>
+              <NavItem>
+                <NavLink  onClick={this.handleLogout} href="/login" class="navbarHeader">Logout</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

@@ -1,6 +1,8 @@
 import { Route, Redirect } from 'react-router-dom'
 import React, { Component } from "react"
 import MainView from "./components/MainView"
+import UserPrediction from './components/userprediction/UserPrediction';
+
 
 
 export default class ApplicationViews extends Component {
@@ -13,11 +15,17 @@ export default class ApplicationViews extends Component {
                      <Route exact path="/mainview" render={(props) => {
                         return <MainView {...props}/>
                      }}/>
+                     
                  } 
+                 <Route path="/predictions" component={UserPrediction} />
+                 
                  {
                      !this.props.isAuthenticated() &&
                      <Redirect to="/login" />
                  }  
+            
+            
+                 
             </React.Fragment>   
         )
     }

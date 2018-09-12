@@ -2,18 +2,18 @@ const remoteURL = "http://localhost:5002"
 
 export default Object.create(null, {
     get: {
-        value: function (keyObject, id) {
-            return fetch(`${remoteURL}/${keyObject}/${id}`).then(e => e.json())
+        value: function (resourcecomponent, id) {
+            return fetch(`${remoteURL}/${resourcecomponent}/${id}`).then(e => e.json())
         }
     },
     getAll: {
-        value: function (keyObject) {
-            return fetch(`${remoteURL}/${keyObject}`).then(e => e.json())
+        value: function (resourcecomponent) {
+            return fetch(`${remoteURL}/${resourcecomponent}`).then(e => e.json())
         }
     },
     post: {
-        value: function (keyObject, newUser) {
-            return fetch(`${remoteURL}/${keyObject}`, {
+        value: function (resourcecomponent, newUser) {
+            return fetch(`${remoteURL}/${resourcecomponent}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -23,17 +23,17 @@ export default Object.create(null, {
         }
     },
     delete: {
-        value: (keyObject, id) => {
-            return fetch(`${remoteURL}/${keyObject}/${id}`, {
+        value: (resourcecomponent, id) => {
+            return fetch(`${remoteURL}/${resourcecomponent}/${id}`, {
             method: "DELETE"
         })
-        .then(()=>{return fetch(`${remoteURL}/${keyObject}`).then(e => e.json()) })
+        .then(()=>{return fetch(`${remoteURL}/${resourcecomponent}`).then(e => e.json()) })
 
         }
     },
     patch: {
-        value: function (keyObject, id, editUser) {
-            return fetch(`${remoteURL}/${keyObject}/${id}`, {
+        value: function (resourcecomponent, id, editUser) {
+            return fetch(`${remoteURL}/${resourcecomponent}/${id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json"

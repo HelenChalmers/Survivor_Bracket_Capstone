@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+
+#predictionListWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#predictionTable {
+    width: 75%;
+    border: 10px solid black;
+    margin-top: 30px;
+    
+}
+.predictionHeader {
+font-family: 'Black Ops One', cursive;
+font-size: 25px;
+}
+
+#predHead {
+    background-color: #f6df93;
+}
+
+.submit_btn {
+    font-family: 'Black Ops One', cursive;
+
+}
