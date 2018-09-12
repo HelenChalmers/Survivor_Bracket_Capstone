@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import DataManager from "../../modules/DataManager"
+import DataManager from "../../modules/Datamanager"
 import './Login.css'
 import Register from "./Register";
 

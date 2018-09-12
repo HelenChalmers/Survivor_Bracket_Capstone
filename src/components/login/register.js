@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import DataManager from "../../modules/DataManager"
+import DataManager from "../../modules/Datamanager"
 
 export default class Register extends Component {
     state = {
