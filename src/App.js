@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Login from "./components/login/Login"
+import { Route } from "react-router-dom"
+import ApplicationViews from "./ApplicationViews"
 
-class App extends Component {
+export default class App extends Component {
+
+  isAuthenticated = () => sessionStorage.getItem("credentials") !== null 
+  
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <React.Fragment>
+        {
+          !this.isAuthenticated() &&
+          <Route exact path="/login" render={(props) => {
+              return <Login {...props} />
+          }} />  
+      }
+      {
+          <ApplicationViews isAuthenticated={this.isAuthenticated}/>
+      }
+      </React.Fragment>
     );
   }
 }
 
-export default App;
+
