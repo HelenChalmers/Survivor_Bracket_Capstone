@@ -179,7 +179,7 @@
       "mergeName": "PreMerge"
     }
   ],
-  "placement_merge": [
+  "PlacementMerge": [
     {
       "Placement": 1,
       "mergeId": 1,
@@ -313,7 +313,7 @@
       "id": 3
     }
   ],
-  "user_prediction": [
+  "predictions": [
     {
       "userID": 1,
       "SurvivorCastId": 1,

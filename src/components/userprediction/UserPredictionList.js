@@ -6,11 +6,17 @@ import './UserPrediction.css'
 
 
 
-export default class ApplicationViews extends Component {
+export default class UserPredictionList extends Component {
 
+  state = {
+    cast: [],
+    predictions: []
+
+  }
     
 
     render() {
+
             
         
 
@@ -26,256 +32,32 @@ export default class ApplicationViews extends Component {
           </tr>
         </thead>
         <tbody>
+          {
+            this.props.PlacementMerge.map(pm =>
           <tr>
-            <th scope="row">1</th>
+            <th scope="row">{pm.Placement}</th>
             <td></td>
             <td>
             <FormGroup>
             <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
+            
+            
+                            <option value="">Select a Cast Member</option>
+                        {
+                            this.props.cast.map(e => <option key={e.id} id={e.id}>{e.castName}</option>)
+                        }
+                        
+              
             </Input>
           </FormGroup>
-</td>
+            </td>
             <td><button class="submit_btn">Submit</button></td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">7</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">8</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">9</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">10</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">11</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">12</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">13</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">14</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">15</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">16</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">17</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">18</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">19</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          <tr>
-            <th scope="row">20</th>
-            <td></td>
-            <td><FormGroup>
-            <Input type="select" name="backdrop" id="backdrop" onChange={this.changeBackdrop}>
-              <option value="true">true</option>
-              <option value="false">false</option>
-              <option value="static">"static"</option>
-            </Input>
-          </FormGroup></td>
-            <td><button class="submit_btn">Submit</button></td>
-          </tr>
-          
-        </tbody>
-      </Table>
+            )}
+          </tbody>
+          </Table>
 
 
-
-
-    
     </wrapper>
 
 
