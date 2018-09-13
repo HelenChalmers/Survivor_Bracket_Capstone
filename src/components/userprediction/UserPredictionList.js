@@ -7,7 +7,7 @@ import './UserPrediction.css'
 
 
 export default class UserPredictionList extends Component {
-
+  
   state = {
     cast: [],
     predictions: [],
@@ -15,7 +15,14 @@ export default class UserPredictionList extends Component {
     userId: "",
     CastId: "",
     castName: "",
-    PlacementPredictionId: ""
+    PlacementPredictionId: "",
+    newPM: []
+
+  }
+
+  componentDidMount() {
+    const newPM = this.props.PlacementMerge.map(p => p)
+    this.setState({newPM})
 
   }
 
@@ -35,7 +42,9 @@ export default class UserPredictionList extends Component {
         CastId: castMember.Id,
         PlacementPredictionId: parseInt(e.target.parentElement.parentElement.children[0].textContent)
     }
-    
+    //filter function that loops over the placement ids and if doesnt = new prediction.pl
+
+   
         this.setState({
           userId: "",
           CastId: "",
@@ -84,9 +93,10 @@ export default class UserPredictionList extends Component {
                         <td><button type="submit" onClick={this.constructNewPrediction} className="submit_btn">Submit</button></td>
                     </tr>
             )}
+          
           </tbody>
           </Table>
-
+        
 
     </wrapper>
 

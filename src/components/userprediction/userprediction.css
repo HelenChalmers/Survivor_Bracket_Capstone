@@ -2,7 +2,8 @@
 
 #predictionListWrapper{
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    flex-direction: column;
 }
 
 #predictionTable {
@@ -22,5 +23,7 @@ font-size: 25px;
 
 .submit_btn {
     font-family: 'Black Ops One', cursive;
+    width: 150px;
+    background-color: #1f92ef;
 
 }
