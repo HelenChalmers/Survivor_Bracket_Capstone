@@ -6,7 +6,7 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 2,
-      "taken": true,
+      "taken": false,
       "id": 1
     },
     {
@@ -15,7 +15,7 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 18,
-      "taken": true,
+      "taken": false,
       "id": 2
     },
     {
@@ -24,7 +24,7 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 1,
-      "taken": true,
+      "taken": false,
       "id": 3
     },
     {
@@ -344,20 +344,6 @@
     }
   ],
   "predictions": [
-    {
-      "userId": 1,
-      "PlacementPredictionId": 1,
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "PlacementPredictionId": 2,
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "PlacementPredictionId": 3,
-      "id": 3
-    }
+    
   ]
 }
