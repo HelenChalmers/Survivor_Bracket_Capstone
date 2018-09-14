@@ -2,8 +2,10 @@
 
 #predictionListWrapper{
     display: flex;
-    justify-content: left;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center
 }
 
 #predictionTable {
@@ -25,5 +27,11 @@ font-size: 25px;
     font-family: 'Black Ops One', cursive;
     width: 150px;
     background-color: #1f92ef;
+
+}
+
+#predictionList {
+    margin-top: 130px;
+    margin-left: 80;
 
 }

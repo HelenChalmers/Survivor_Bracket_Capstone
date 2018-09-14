@@ -16,52 +16,62 @@ export default class ApplicationViews extends Component {
     }
 
     addUserPrediction = prediction => PredictionManager.post(prediction)
-    .then(() => PredictionManager.getAll())
-    .then(predictions => this.setState({
-        predictions: predictions
-    }))
+        .then(() => PredictionManager.getAll())
+        .then(predictions => this.setState({
+            predictions: predictions
+        }))
 
     //this grabs the arrays to pass down (PlacementMerge and Cast)
-    componentDidMount(){
+    componentDidMount() {
         CastManager.getAll().then(cast => {
             this.setState({
                 cast: cast
             })
         }),
-        PMManager.getAll().then(PlacementMerge => {
-            this.setState({
-                PlacementMerge: PlacementMerge
+            PMManager.getAll().then(PlacementMerge => {
+                this.setState({
+                    PlacementMerge: PlacementMerge
+                })
             })
-        })
+    }
+
+    patchCastMember = (castMemberId, object) => {
+        return CastManager.patch(castMemberId, object)
+        .then(()=> CastManager.getAll())
+        .then(cast => this.setState({cast: cast}))
     }
 
     render() {
         return (
             <React.Fragment>
-                 {
-                     this.props.isAuthenticated() &&
-                     <Route exact path="/mainview" render={(props) => {
-                        return <MainView {...props}/>
-                     }}/>
-                     
-                 } 
-                 <Route exact path="/predictions"  
-                 render={(props) => {
-                    return <UserPrediction {...props}
-                    cast={this.state.cast}
-                    addUserPrediction={this.addUserPrediction}
-                    PlacementMerge={this.state.PlacementMerge}/>
-                 }}/>
-                 
-                 
-                 {
-                     !this.props.isAuthenticated() &&
-                     <Redirect to="/login" />
-                 }  
-            
-            
-                 
-            </React.Fragment>   
+                {
+                    this.props.isAuthenticated() &&
+                    <Route exact path="/mainview" render={(props) => {
+                        return <MainView {...props}
+                        cast={this.state.cast} 
+                        predictions={this.state.predictions} />
+                    }} />
+
+                }
+                <Route exact path="/predictions"
+                    render={(props) => {
+                        return <UserPrediction {...props}
+                            cast={this.state.cast}
+                            patchCastMember={this.patchCastMember}
+                            addUserPrediction={this.addUserPrediction}
+                            PlacementMerge={this.state.PlacementMerge}
+                            predictions={this.state.predictions} />
+                    }} />
+
+
+                {
+                    !this.props.isAuthenticated() &&
+                    <Redirect to="/login" />
+                }
+
+
+
+            </React.Fragment>
         )
     }
 }
