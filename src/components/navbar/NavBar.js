@@ -42,13 +42,13 @@ export default class NavBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/predictions" class="navbarHeader">My Prediction</NavLink>
+                <NavLink href="/predictions" className="navbarHeader">My Prediction</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://www.cbs.com/shows/survivor/cast/" target="_blank" class="navbarHeader">Cast Profiles</NavLink>
+                <NavLink href="https://www.cbs.com/shows/survivor/cast/" target="_blank" className="navbarHeader">Cast Profiles</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink  onClick={this.handleLogout} href="/login" class="navbarHeader">Logout</NavLink>
+                <NavLink  onClick={this.handleLogout} href="/login" className="navbarHeader">Logout</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
