@@ -96,7 +96,7 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 13,
-      "taken": false,
+      "taken": true,
       "id": 11
     },
     {
@@ -358,6 +358,12 @@
       "userId": 1,
       "PlacementPredictionId": 3,
       "id": 3
+    },
+    {
+      "userId": 1,
+      "CastId": 11,
+      "PlacementPredictionId": 1,
+      "id": 4
     }
   ]
 }
