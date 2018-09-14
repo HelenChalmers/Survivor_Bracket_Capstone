@@ -6,7 +6,6 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 2,
-      "taken": true,
       "id": 1
     },
     {
@@ -15,7 +14,6 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 18,
-      "taken": true,
       "id": 2
     },
     {
@@ -24,7 +22,6 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 1,
-      "taken": true,
       "id": 3
     },
     {
@@ -33,7 +30,6 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 17,
-      "taken": false,
       "id": 4
     },
     {
@@ -42,7 +38,6 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 3,
-      "taken": false,
       "id": 5
     },
     {
@@ -51,7 +46,6 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 19,
-      "taken": false,
       "id": 6
     },
     {
@@ -60,7 +54,6 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 16,
-      "taken": false,
       "id": 7
     },
     {
@@ -69,7 +62,6 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 4,
-      "taken": false,
       "id": 8
     },
     {
@@ -78,7 +70,6 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 14,
-      "taken": false,
       "id": 9
     },
     {
@@ -87,7 +78,6 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 12,
-      "taken": false,
       "id": 10
     },
     {
@@ -96,7 +86,6 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 13,
-      "taken": true,
       "id": 11
     },
     {
@@ -105,7 +94,6 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 15,
-      "taken": false,
       "id": 12
     },
     {
@@ -114,7 +102,6 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 20,
-      "taken": false,
       "id": 13
     },
     {
@@ -123,7 +110,6 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 11,
-      "taken": false,
       "id": 14
     },
     {
@@ -132,7 +118,6 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 5,
-      "taken": false,
       "id": 15
     },
     {
@@ -141,7 +126,6 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 9,
-      "taken": false,
       "id": 16
     },
     {
@@ -150,7 +134,6 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 8,
-      "taken": false,
       "id": 17
     },
     {
@@ -159,7 +142,6 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 6,
-      "taken": false,
       "id": 18
     },
     {
@@ -168,7 +150,6 @@
       "castImg": "",
       "tribe": "David",
       "castPlacement": 10,
-      "taken": false,
       "id": 19
     },
     {
@@ -177,7 +158,6 @@
       "castImg": "",
       "tribe": "Goliath",
       "castPlacement": 7,
-      "taken": false,
       "id": 20
     }
   ],
@@ -309,7 +289,6 @@
       "password": "helen",
       "bio": "Add a bio",
       "birthday": "Add your birthday",
-      "points": 0,
       "id": 1
     },
     {
@@ -319,7 +298,6 @@
       "password": "jenna",
       "bio": "Add a bio",
       "birthday": "Add your birthday",
-      "points": 0,
       "id": 2
     },
     {
@@ -329,7 +307,6 @@
       "password": "brenda",
       "bio": "Add a bio",
       "birthday": "Add your birthday",
-      "points": 0,
       "id": 3
     },
     {
@@ -339,31 +316,39 @@
       "password": "madi",
       "bio": "Add a bio",
       "birthday": "Add your birthday",
-      "points": 0,
       "id": 4
+    },
+    {
+      "firstName": "Alejandro",
+      "lastName": "Font",
+      "email": "alex@gmail.com",
+      "password": "alex",
+      "bio": "Add a bio",
+      "birthday": "Add your birthday",
+      "id": 5
     }
   ],
   "predictions": [
     {
       "userId": 1,
+      "CastId": 20,
       "PlacementPredictionId": 1,
+      "correctPrediction": "Null",
       "id": 1
     },
     {
       "userId": 1,
-      "PlacementPredictionId": 2,
+      "CastId": 2,
+      "PlacementPredictionId": 1,
+      "correctPrediction": "Null",
       "id": 2
     },
     {
       "userId": 1,
-      "PlacementPredictionId": 3,
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "CastId": 11,
+      "CastId": 2,
       "PlacementPredictionId": 1,
-      "id": 4
+      "correctPrediction": "Null",
+      "id": 3
     }
   ]
 }

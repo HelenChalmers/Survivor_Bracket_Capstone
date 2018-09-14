@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Redirect } from 'react-router-dom'
 import React, { Component } from 'react'
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup, ListGroup, ListGroupItem  } from 'reactstrap';
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup, ListGroup, ListGroupItem } from 'reactstrap';
 import './UserPrediction.css'
 
 
@@ -34,6 +34,8 @@ export default class UserPredictionList extends Component {
 
   user = () => JSON.parse(sessionStorage.getItem("credentials"))
 
+
+
   constructNewPrediction = (e) => {
     let castMember = this.props.cast.find(c => c.castName === this.state.castName)
     castMember.taken = true
@@ -42,7 +44,8 @@ export default class UserPredictionList extends Component {
 
       userId: this.user().id,
       CastId: castMember.id,
-      PlacementPredictionId: parseInt(e.target.parentElement.parentElement.children[0].textContent)
+      PlacementPredictionId: parseInt(e.target.parentElement.parentElement.children[0].textContent),
+      correctPrediction: "Null"
     }
     //filter function that loops over the placement ids and if doesnt = new prediction.pl
 
@@ -50,16 +53,25 @@ export default class UserPredictionList extends Component {
     this.setState({
       userId: "",
       CastId: "",
-      PlacementPredictionId: ""
+      PlacementPredictionId: "",
+      correctPrediction: "Null"
     })
-    this.props.patchCastMember(castMember.id, castMember)
-    .then(() => this.props.addUserPrediction(newPrediction))
+    this.props.addUserPrediction(newPrediction)
   }
+    
+    patchPrediction = () => {
+    if (this.state.cast.castPlacement === this.state.PlacementPredictionId && this.state.cast.id === this.state.predictions.CastId) {
+      this.props.patchCorrectPrediction(this.state.predictions.correctPrediction, "True")
+    }
+  }
+  
+
+
 
 
 
   render() {
-    
+
 
 
     return (
@@ -91,10 +103,10 @@ export default class UserPredictionList extends Component {
                       </Input>
                     </FormGroup>
                   </td>
-                  {this.state.predictions.CastId !== pm.Placement && 
+                  {this.state.predictions.CastId !== pm.Placement &&
 
-                     <td>
-                    <button type="submit" onClick={this.constructNewPrediction} className="submit_btn">Submit</button>
+                    <td>
+                      <button type="submit" onClick={this.constructNewPrediction} className="submit_btn">Submit</button>
                     </td>}
                 </tr>
               )}
@@ -102,17 +114,17 @@ export default class UserPredictionList extends Component {
           </tbody>
         </Table>
         <ListGroup id="predictionList">
-        <th className="predictionHeader">Final Prediction</th>
+          <th className="predictionHeader">Final Prediction</th>
           <ListGroupItem>
-                        {
-                          this.props.predictions.map(e  => <p key={e.CastId} id={e.PlacementPredictionId}>{e.CastId}
-                          
-                          {/* {this.props.cast.find(c => c.Id === e.CastId).castName} */}
-                          </p>)
-                          
-                        }
+            {
+              this.props.predictions.map(e => <p key={e.CastId} id={e.PlacementPredictionId}>{e.CastId}
+
+                {/* {this.props.cast.find(c => c.Id === e.CastId).castName} */}
+              </p>)
+
+            }
           </ListGroupItem>
-          
+
         </ListGroup>
 
       </wrapper>
@@ -123,3 +135,5 @@ export default class UserPredictionList extends Component {
 }
 
 // this.props.predictions.map(e => <p key={e.CastId} id={e.PlacementPredictionId}>{e.CastId}</p>)
+// this.props.patchCastMember(castMember.id, castMember)
+//     .then(() => 

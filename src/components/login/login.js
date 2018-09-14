@@ -71,17 +71,6 @@ export default class Login extends Component {
 })
 }
 
-// changeRememberMe = () => {
-
-//     if (this.state.remember) {
-//         this.setState({remember : false})
-//     } else {
-//         this.setState({remember : true})
-//     }
-// }
-    
-
-
     render() {
         return (
             <React.Fragment>

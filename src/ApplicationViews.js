@@ -41,6 +41,10 @@ export default class ApplicationViews extends Component {
         .then(cast => this.setState({cast: cast}))
     }
 
+    patchCorrectPrediction = (predictionID, object) => {
+        return PredictionManager.patch(predictionID, object).then(() => PredictionManager.getAll()).then(predictions=> this.setState({predictions: predictions}))
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -60,7 +64,8 @@ export default class ApplicationViews extends Component {
                             patchCastMember={this.patchCastMember}
                             addUserPrediction={this.addUserPrediction}
                             PlacementMerge={this.state.PlacementMerge}
-                            predictions={this.state.predictions} />
+                            predictions={this.state.predictions} 
+                            patchCorrectPrediction={this.patchCorrectPrediction}/>
                     }} />
 
 

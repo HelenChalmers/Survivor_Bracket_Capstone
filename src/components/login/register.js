@@ -28,12 +28,12 @@ export default class Register extends Component {
             password: this.state.password,
             bio: "Add a bio",
             birthday: "Add your birthday",
-            points: 0
-
+            
         }
    
 
     DataManager.getAll("users").then((result) => {
+        //checks to see if the user is already registered.
         let userEmail = result.find(item => {
             return newUser.email === item.email
         })
@@ -43,11 +43,10 @@ export default class Register extends Component {
         if (userEmail && userPassword) {
             alert("I've got nothing for you. You are already registered")
         } else {
-            //Post to API
+            
             DataManager.post("users", newUser).then(() => {
                 alert("The Tribe has spoken. You are in the game.")
-                //Clear the Form Fields
-                //Put HTML Representation on the DOM
+               
             })
         }
     })
@@ -87,10 +86,7 @@ export default class Register extends Component {
                         id="password"
                         placeholder="Password"
                         required="" /><br />
-                    {/* <label htmlFor="rememberMe">
-                        Remember Me
-                    </label>
-                    <input type="checkbox" name="RememberMe" value="Remember" onClick={this.changeRememberMe}/> */}
+                    
                     <button id="registerbtn" type="submit" onClick={this.registerNewUser}>
                         Register
                     </button>
