@@ -43,5 +43,11 @@ export default Object.create(null, {
             }).then(e => e.json())
 
         }
+    },
+    getPredictionsbyUser: {
+        value: (id) => {
+            return fetch(`http://localhost:8088/predictions?correctPrediction=true&userId=${id}`)
+            .then(response => response.json());
+        }
     }
 })

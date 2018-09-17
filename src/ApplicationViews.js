@@ -53,6 +53,10 @@ export default class ApplicationViews extends Component {
         return PredictionManager.patch(predictionID, object).then(() => PredictionManager.getAll()).then(predictions=> this.setState({predictions: predictions}))
     }
 
+   getFilteredPredictionsByUser = (userId) => {
+       return PredictionManager.getPredictionsbyUser(userId)
+   }
+
     render() {
         return (
             <React.Fragment>
@@ -62,7 +66,8 @@ export default class ApplicationViews extends Component {
                         return <MainView {...props}
                         cast={this.state.cast} 
                         predictions={this.state.predictions}
-                        patchCorrectPrediction={this.patchCorrectPrediction} />
+                        patchCorrectPrediction={this.patchCorrectPrediction} 
+                        getFilteredPredictionsByUser={this.getFilteredPredictionsByUser}/>
                     }} />
 
                 }

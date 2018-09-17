@@ -8,43 +8,46 @@ import DataManager from "../../modules/Datamanager"
 
 export default class Points extends Component {
 
-    
 
+    currentUser = () => JSON.parse(sessionStorage.getItem("credentials"))
 
     switchCorrectPrediction = (predictionObject) => {
-        this.props.patchCorrectPrediction(predictionObject.id, {correctPrediction: true})
-      }
-    
-      switchIncorrectPrediction = (predictionObject) => {
-         this.props.patchCorrectPrediction(predictionObject.id, {correctPrediction: false})
-      }
-    
-      patchPrediction = () => {
-    this.props.predictions.forEach(prediction => {
-        
-        let predictionObject = this.props.cast.find(cast => {
-          return cast.id === prediction.CastId && cast.castPlacement === prediction.PlacementPredictionId
+        this.props.patchCorrectPrediction(predictionObject.id, { correctPrediction: true })
+    };
+
+    switchIncorrectPrediction = (predictionObject ) => {
+        this.props.patchCorrectPrediction(predictionObject .id, { correctPrediction: false })
+    };
+
+    patchPrediction = () => {
+        this.props.predictions.forEach(prediction => {
+
+            let predictionObject = this.props.cast.find(cast => {
+                return cast.id === prediction.CastId && cast.castPlacement === prediction.PlacementPredictionId
+            })
+            if (predictionObject) { this.switchCorrectPrediction(predictionObject) } else
+           
+            { this.switchIncorrectPrediction(predictionObject) }
         })
-        if (predictionObject) { this.switchCorrectPrediction(predictionObject) } else {this.switchIncorrectPrediction(predictionObject) }
-    });
-        
-      }
+        let correctPredictions = this.props.getFilteredPredictionsByUser(this.state.currentUser.id)
+        console.log(correctPredictions)
+    }
 
 
 
 
-render() {
-    return (
-        <React.Fragment>
-            <Card id="userScoreCard">
-                <CardBody>
-                    <CardTitle>User's Score</CardTitle>
-                    <Button onClick={this.patchPrediction}>Update Score</Button>
-                </CardBody>
-            </Card>
-        </React.Fragment>
-    )
-}
+    render() {
+        return (
+            <React.Fragment>
+                <Card id="userScoreCard">
+                    <CardBody>
+                        <CardTitle>User's Score</CardTitle>
+                        <Button onClick={this.patchPrediction}>Update Score</Button>
+                    </CardBody>
+                </Card>
+            </React.Fragment>
+        )
+    }
 }
 
 

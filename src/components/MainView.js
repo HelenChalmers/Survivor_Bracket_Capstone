@@ -15,7 +15,8 @@ export default class MainView extends Component {
             <React.Fragment>
                 <NavBar />
                 <Points {...this.props} predictions={this.props.predictions}
-                patchCorrectPrediction={this.props.patchCorrectPrediction}/>
+                patchCorrectPrediction={this.props.patchCorrectPrediction}
+                getFilteredPredictionsByUser={this.props.getFilteredPredictionsByUser}/>
                 <h1>Welcome HELEN</h1>
                 <form>
                     <input type="button" value="Donate" id="donateBtn" onClick="window.location.href='https://venmo.com/'" />

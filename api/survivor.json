@@ -358,6 +358,13 @@
       "PlacementPredictionId": 18,
       "correctPrediction": true,
       "id": 3
+    },
+    {
+      "userId": 8,
+      "CastId": 5,
+      "PlacementPredictionId": 4,
+      "correctPrediction": null,
+      "id": 4
     }
   ]
 }
