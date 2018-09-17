@@ -161,24 +161,6 @@
       "id": 20
     }
   ],
-  "merge": [
-    {
-      "Id": 1,
-      "mergeName": "Winner"
-    },
-    {
-      "Id": 2,
-      "mergeName": "Final 4"
-    },
-    {
-      "Id": 3,
-      "mergeName": "PostMerge"
-    },
-    {
-      "Id": 4,
-      "mergeName": "PreMerge"
-    }
-  ],
   "PlacementMerge": [
     {
       "Placement": 1,
@@ -326,28 +308,55 @@
       "bio": "Add a bio",
       "birthday": "Add your birthday",
       "id": 5
+    },
+    {
+      "firstName": "Micah",
+      "lastName": "Thomas",
+      "email": "micah@gmail.com",
+      "password": "ruby",
+      "bio": "Add a bio",
+      "birthday": "Add your birthday",
+      "id": 6
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Chalmers",
+      "email": "mike@gmail.com",
+      "password": "mike",
+      "bio": "Add a bio",
+      "birthday": "Add your birthday",
+      "id": 7
+    },
+    {
+      "firstName": "grady",
+      "lastName": "r",
+      "email": "grady@22.com",
+      "password": "22",
+      "bio": "Add a bio",
+      "birthday": "Add your birthday",
+      "id": 8
     }
   ],
   "predictions": [
     {
-      "userId": 1,
-      "CastId": 20,
-      "PlacementPredictionId": 1,
-      "correctPrediction": "Null",
+      "userId": 8,
+      "CastId": 1,
+      "PlacementPredictionId": 2,
+      "correctPrediction": true,
       "id": 1
     },
     {
-      "userId": 1,
-      "CastId": 2,
+      "userId": 8,
+      "CastId": 3,
       "PlacementPredictionId": 1,
-      "correctPrediction": "Null",
+      "correctPrediction": true,
       "id": 2
     },
     {
-      "userId": 1,
+      "userId": 8,
       "CastId": 2,
-      "PlacementPredictionId": 1,
-      "correctPrediction": "Null",
+      "PlacementPredictionId": 18,
+      "correctPrediction": true,
       "id": 3
     }
   ]

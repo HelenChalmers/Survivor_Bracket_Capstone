@@ -6,6 +6,7 @@ import './UserPrediction.css'
 
 
 
+
 export default class UserPredictionList extends Component {
 
   state = {
@@ -16,6 +17,7 @@ export default class UserPredictionList extends Component {
     CastId: "",
     castName: "",
     PlacementPredictionId: "",
+    correctPrediction: false,
     newPM: []
 
   }
@@ -32,6 +34,10 @@ export default class UserPredictionList extends Component {
     this.setState(stateToChange)
   }
 
+  
+
+
+  
   user = () => JSON.parse(sessionStorage.getItem("credentials"))
 
 
@@ -45,28 +51,23 @@ export default class UserPredictionList extends Component {
       userId: this.user().id,
       CastId: castMember.id,
       PlacementPredictionId: parseInt(e.target.parentElement.parentElement.children[0].textContent),
-      correctPrediction: "Null"
+      correctPrediction: null
     }
-    //filter function that loops over the placement ids and if doesnt = new prediction.pl
 
-
+  
+  
     this.setState({
       userId: "",
       CastId: "",
       PlacementPredictionId: "",
-      correctPrediction: "Null"
+      correctPrediction: ""
     })
-    this.props.addUserPrediction(newPrediction)
-  }
     
-    patchPrediction = () => {
-    if (this.state.cast.castPlacement === this.state.PlacementPredictionId && this.state.cast.id === this.state.predictions.CastId) {
-      this.props.patchCorrectPrediction(this.state.predictions.correctPrediction, "True")
-    }
+    this.props.addUserPrediction(newPrediction)
+
+    this.setState(newPrediction);
+
   }
-  
-
-
 
 
 
@@ -99,7 +100,6 @@ export default class UserPredictionList extends Component {
                           this.props.cast.filter(cm => !cm.taken).map(e => <option key={e.Id} id={e.Id}>{e.castName}</option>)
                         }
 
-
                       </Input>
                     </FormGroup>
                   </td>
@@ -117,9 +117,8 @@ export default class UserPredictionList extends Component {
           <th className="predictionHeader">Final Prediction</th>
           <ListGroupItem>
             {
-              this.props.predictions.map(e => <p key={e.CastId} id={e.PlacementPredictionId}>{e.CastId}
-
-                {/* {this.props.cast.find(c => c.Id === e.CastId).castName} */}
+              this.props.predictions.map(e => <p key={e.CastId} id={e.PlacementPredictionId}>
+                {this.props.cast.find(c => c.id === e.CastId).castName}
               </p>)
 
             }

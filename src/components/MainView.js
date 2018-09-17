@@ -6,15 +6,19 @@ import Points from './pointsportal/Points'
 
 export default class MainView extends Component {
 
+    componentDidMount (){
+        console.log(this.props)
+    }
 
     render() {
         return (
             <React.Fragment>
                 <NavBar />
-                {/* <Points {...props}/> */}
+                <Points {...this.props} predictions={this.props.predictions}
+                patchCorrectPrediction={this.props.patchCorrectPrediction}/>
                 <h1>Welcome HELEN</h1>
                 <form>
-                    <input type="button" value="Donate" id="donateBtn" onclick="window.location.href='https://venmo.com/'" />
+                    <input type="button" value="Donate" id="donateBtn" onClick="window.location.href='https://venmo.com/'" />
                 </form>
                 
                 

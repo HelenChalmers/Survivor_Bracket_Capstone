@@ -9,7 +9,7 @@ export default class UserPrediction extends Component {
     render() {
         return (
             <React.Fragment>
-                <UserPredictionList {...this.props} addUserPrediction={this.props.addUserPrediction}/>                
+                <UserPredictionList {...this.props} addUserPrediction={this.props.addUserPrediction} patchCorrectPrediction={this.props.patchCorrectPrediction}/>                
             </React.Fragment>
         )
     }

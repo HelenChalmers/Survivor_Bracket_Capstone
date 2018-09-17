@@ -35,7 +35,7 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="navbarWrapper">
         <Navbar color="#f6df93" light expand="md" id="navbar">
           <NavbarBrand href="/" id="navbarbrand">Survivor Bracket</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />

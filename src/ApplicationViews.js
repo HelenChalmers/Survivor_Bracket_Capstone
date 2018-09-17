@@ -27,12 +27,20 @@ export default class ApplicationViews extends Component {
             this.setState({
                 cast: cast
             })
-        }),
+            
+        }).then(
             PMManager.getAll().then(PlacementMerge => {
                 this.setState({
                     PlacementMerge: PlacementMerge
                 })
-            })
+                
+            })).then(
+            PredictionManager.getAll().then(predictions => {
+                this.setState({
+                    predictions: predictions
+                })
+            }))
+            
     }
 
     patchCastMember = (castMemberId, object) => {
@@ -53,7 +61,8 @@ export default class ApplicationViews extends Component {
                     <Route exact path="/mainview" render={(props) => {
                         return <MainView {...props}
                         cast={this.state.cast} 
-                        predictions={this.state.predictions} />
+                        predictions={this.state.predictions}
+                        patchCorrectPrediction={this.patchCorrectPrediction} />
                     }} />
 
                 }
@@ -64,8 +73,7 @@ export default class ApplicationViews extends Component {
                             patchCastMember={this.patchCastMember}
                             addUserPrediction={this.addUserPrediction}
                             PlacementMerge={this.state.PlacementMerge}
-                            predictions={this.state.predictions} 
-                            patchCorrectPrediction={this.patchCorrectPrediction}/>
+                            predictions={this.state.predictions} />
                     }} />
 
 

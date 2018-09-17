@@ -33,6 +33,7 @@ export default Object.create(null, {
     },
     patch: {
         value: function (id, editPrediction) {
+            console.log(editPrediction)
             return fetch(`${remoteURL}/predictions/${id}`, {
                 method: "PATCH",
                 headers: {
@@ -40,6 +41,7 @@ export default Object.create(null, {
                 },
                 body: JSON.stringify(editPrediction)
             }).then(e => e.json())
+
         }
     }
 })

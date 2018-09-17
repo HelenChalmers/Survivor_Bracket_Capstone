@@ -1,9 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+
+
 #loginForm {
   display: flex;
   padding: 5em;
   width: 400px;
   height: 50%;
   border: 5px solid black;
-  
+  font-family: 'Black Ops One', cursive;
+  margin-top: 50px;
+}
 
+#loginWrapper {
+  display: flex;
+  justify-content: center;
+
+}
+
+#registerForm {
+  font-family: 'Black Ops One', cursive;  
+  display: flex;
+  padding: 5em;
+  width: 400px;
+  height: 50%;
+  border: 5px solid black;
+  margin-top: 50px;
+}
+
+#registerWrapper{
+  display: flex;
+  justify-content: center;
+}
+
+::placeholder {
+  font-family: 'Times New Roman', Times, serif;
 }

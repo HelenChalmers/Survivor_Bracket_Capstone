@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import DataManager from "../../modules/Datamanager"
+import './Login.css'
 
 export default class Register extends Component {
     state = {
@@ -50,11 +51,13 @@ export default class Register extends Component {
             })
         }
     })
+    this.props.switchLogin();
 }
 
 
     render() {
         return (
+            <div id="registerWrapper">
             <div id="registerForm">
                 <form onSubmit={this.registerNewUser}>
                     <h1 className="h3 mb-3 font-weight-normal">Please Register</h1>
@@ -90,11 +93,15 @@ export default class Register extends Component {
                     <button id="registerbtn" type="submit" onClick={this.registerNewUser}>
                         Register
                     </button>
-                    <button id="loginbtn" type="submit" onClick={() => {this.props.switchLogin()}}>
-                        Login
-                    </button>
+                    
                 </form>
+            </div>
             </div>    
         )
+
     }
 }
+
+{/* <button id="loginbtn" type="submit" onClick={() => {this.props.switchLogin()}}>
+                        Login
+                    </button> */}
