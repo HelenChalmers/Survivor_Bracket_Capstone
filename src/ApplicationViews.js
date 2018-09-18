@@ -14,6 +14,7 @@ export default class ApplicationViews extends Component {
         PlacementMerge: [],
         predictions: []
     }
+    
 
     addUserPrediction = prediction => PredictionManager.post(prediction)
         .then(() => PredictionManager.getAll())
@@ -27,12 +28,20 @@ export default class ApplicationViews extends Component {
             this.setState({
                 cast: cast
             })
-        }),
+            
+        }).then(
             PMManager.getAll().then(PlacementMerge => {
                 this.setState({
                     PlacementMerge: PlacementMerge
                 })
-            })
+                
+            })).then(
+            PredictionManager.getAll().then(predictions => {
+                this.setState({
+                    predictions: predictions
+                })
+            }))
+            
     }
 
     patchCastMember = (castMemberId, object) => {
@@ -40,6 +49,14 @@ export default class ApplicationViews extends Component {
         .then(()=> CastManager.getAll())
         .then(cast => this.setState({cast: cast}))
     }
+
+    patchCorrectPrediction = (predictionID, object) => {
+        return PredictionManager.patch(predictionID, object).then(() => PredictionManager.getAll()).then(predictions=> this.setState({predictions: predictions}))
+    }
+
+   getFilteredPredictionsByUser = (userId) => {
+       return PredictionManager.getPredictionsbyUser(userId)
+   }
 
     render() {
         return (
@@ -49,7 +66,9 @@ export default class ApplicationViews extends Component {
                     <Route exact path="/mainview" render={(props) => {
                         return <MainView {...props}
                         cast={this.state.cast} 
-                        predictions={this.state.predictions} />
+                        predictions={this.state.predictions}
+                        patchCorrectPrediction={this.patchCorrectPrediction} 
+                        getFilteredPredictionsByUser={this.getFilteredPredictionsByUser}/>
                     }} />
 
                 }

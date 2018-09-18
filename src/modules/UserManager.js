@@ -42,4 +42,8 @@ export default Object.create(null, {
             }).then(e => e.json())
         }
     }
+    filterUser: {
+        
+
+    }
 })

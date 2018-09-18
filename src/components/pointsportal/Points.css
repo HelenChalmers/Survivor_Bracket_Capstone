@@ -1,0 +1,13 @@
+#userScoreCard {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    flex-direction: column;
+}
+
+#UserScore {
+    align-content: center;
+    
+
+}

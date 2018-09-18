@@ -16,3 +16,8 @@
     font-weight: 200;
 
 }
+
+#loginWrapper{
+    display: flex;
+    flex-wrap: wrap;
+}

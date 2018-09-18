@@ -8,6 +8,7 @@ import Register from "./Register";
 
 
 
+
 export default class Login extends Component {
 
     state = {
@@ -53,7 +54,7 @@ export default class Login extends Component {
             } else { 
         /*
             Store the email and password that
-            the customer enters into local storage.
+            the user enters into session storage.
         */
         sessionStorage.setItem(
             "credentials",
@@ -71,17 +72,6 @@ export default class Login extends Component {
 })
 }
 
-// changeRememberMe = () => {
-
-//     if (this.state.remember) {
-//         this.setState({remember : false})
-//     } else {
-//         this.setState({remember : true})
-//     }
-// }
-    
-
-
     render() {
         return (
             <React.Fragment>
@@ -91,34 +81,37 @@ export default class Login extends Component {
                 }
                 {
                     !this.state.registerClicked &&
+                    <div id="loginWrapper">
                     <div id="loginForm">
                         <form onSubmit={this.handleLogin}>
-                            <h1 className="h3 mb-3 font-weight-normal">Please Log In</h1>
+                            <h1 className="h3 mb-3 font-weight-normal">Please Log In! New Player? Please Register</h1>
                             <label htmlFor="inputEmail">
                             Email
-                            </label>
+                            </label><br />
                             <input onChange={this.handleFieldChange} type="email"
                                 id="email"
                                 placeholder="Email address"
-                                required="" autoFocus="" /><br />
+                                required="" autoFocus="" /><br /><br />
                             <label htmlFor="inputPassword">
                                 Password
                             </label>
                             <input onChange={this.handleFieldChange} type="password"
                                 id="password"
                                 placeholder="Password"
-                                required="" /><br />
+                                required="" /><br /><br />
                             {/* <label htmlFor="rememberMe">
                                 Remember Me
                             </label> */}
                             {/* <input type="checkbox" name="RememberMe" value="Remember" onClick={this.changeRememberMe}/> */}
-                            <button type="submit" onClick={this.switchRegister}>
-                                Register
-                            </button>
+                            
                             <button type="submit" onClick={this.handleLogin}>
                                 Login
                             </button>
+                            <button type="submit" onClick={this.switchRegister}>
+                                Register
+                            </button>
                         </form>
+                    </div>
                     </div>
                 }
             </React.Fragment>
