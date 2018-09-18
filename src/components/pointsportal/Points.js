@@ -34,6 +34,8 @@ export default class Points extends Component {
             let predictionObject = this.props.cast.find(cast => {
                 return cast.id === prediction.CastId && cast.castPlacement === prediction.PlacementPredictionId
             })
+            
+            
             if (predictionObject) { this.switchCorrectPrediction(predictionObject) } 
             
             
