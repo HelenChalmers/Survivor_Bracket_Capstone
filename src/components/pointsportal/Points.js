@@ -67,7 +67,7 @@ export default class Points extends Component {
             <React.Fragment>
                 <Card id="userScoreCard">
                     <CardBody>
-                        <CardTitle>{this.state.UserScore}</CardTitle>
+                        <CardTitle id="UserScore">{this.state.UserScore}</CardTitle>
                         <Button onClick={this.patchPrediction}>Update Score</Button>
                     </CardBody>
                 </Card>
