@@ -335,50 +335,54 @@
       "bio": "Add a bio",
       "birthday": "Add your birthday",
       "id": 8
+    },
+    {
+      "firstName": "john ",
+      "lastName": "wood",
+      "email": "Johnnathanwood@gmail.com",
+      "password": "1",
+      "bio": "Add a bio",
+      "birthday": "Add your birthday",
+      "id": 9
+    },
+    {
+      "firstName": "brenda",
+      "lastName": "Long",
+      "email": "brenda.long@nashvillesoftwareschool.com",
+      "password": "123456",
+      "bio": "Add a bio",
+      "birthday": "Add your birthday",
+      "id": 10
     }
   ],
   "predictions": [
     {
-      "userId": 8,
-      "CastId": 1,
-      "PlacementPredictionId": 2,
+      "userId": 10,
+      "CastId": 3,
+      "PlacementPredictionId": 1,
       "correctPrediction": true,
       "id": 1
     },
     {
-      "userId": 8,
-      "CastId": 3,
-      "PlacementPredictionId": 1,
+      "userId": 10,
+      "CastId": 1,
+      "PlacementPredictionId": 2,
       "correctPrediction": true,
       "id": 2
     },
     {
-      "userId": 8,
-      "CastId": 2,
-      "PlacementPredictionId": 18,
-      "correctPrediction": true,
+      "userId": 10,
+      "CastId": 11,
+      "PlacementPredictionId": 9,
+      "correctPrediction": null,
       "id": 3
     },
     {
-      "userId": 8,
-      "CastId": 5,
-      "PlacementPredictionId": 4,
+      "userId": 10,
+      "CastId": 1,
+      "PlacementPredictionId": 10,
       "correctPrediction": null,
       "id": 4
-    },
-    {
-      "userId": 8,
-      "CastId": 19,
-      "PlacementPredictionId": 10,
-      "correctPrediction": true,
-      "id": 5
-    },
-    {
-      "userId": 8,
-      "CastId": 20,
-      "PlacementPredictionId": 7,
-      "correctPrediction": true,
-      "id": 6
     }
   ]
 }

@@ -12,16 +12,19 @@ export default class MainView extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <React.Fragment >
                 <NavBar />
+                <div id="mainview">
+                <div id="pointsbox">
                 <Points {...this.props} predictions={this.props.predictions}
                 patchCorrectPrediction={this.props.patchCorrectPrediction}
                 getFilteredPredictionsByUser={this.props.getFilteredPredictionsByUser}/>
-                <h1>Welcome HELEN</h1>
-                <form>
+                </div>
+                <h1 id="mainview-header">Welcome!</h1>
+                <form id="donatebutton">
                     <input type="button" value="Donate" id="donateBtn" onClick="window.location.href='https://venmo.com/'" />
                 </form>
-                
+                </div>
                 
             </React.Fragment>
         )

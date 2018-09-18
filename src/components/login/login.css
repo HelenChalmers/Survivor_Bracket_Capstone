@@ -6,30 +6,43 @@
   padding: 5em;
   width: 400px;
   height: 50%;
-  border: 5px solid black;
+  /* border: 5px solid black; */
   font-family: 'Black Ops One', cursive;
+  color: #a5bdb0;
+   /* #f6de91; */
   margin-top: 50px;
+  margin-left: 50px;
 }
 
 #loginWrapper {
   display: flex;
-  justify-content: center;
-
+  justify-content: left;
+  background-image: url(../login/Fiji.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: round;
+  position: absolute;
 }
 
 #registerForm {
   font-family: 'Black Ops One', cursive;  
+  color:  #a5bdb0;
   display: flex;
   padding: 5em;
   width: 400px;
   height: 50%;
-  border: 5px solid black;
   margin-top: 50px;
+  margin-left: 50px;
 }
 
 #registerWrapper{
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  background-image: url(../login/Fiji.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: round;
+  position: absolute;
 }
 
 ::placeholder {

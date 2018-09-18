@@ -103,11 +103,12 @@ export default class Login extends Component {
                                 Remember Me
                             </label> */}
                             {/* <input type="checkbox" name="RememberMe" value="Remember" onClick={this.changeRememberMe}/> */}
-                            <button type="submit" onClick={this.switchRegister}>
-                                Register
-                            </button>
+                            
                             <button type="submit" onClick={this.handleLogin}>
                                 Login
+                            </button>
+                            <button type="submit" onClick={this.switchRegister}>
+                                Register
                             </button>
                         </form>
                     </div>
