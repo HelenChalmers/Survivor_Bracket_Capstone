@@ -29,13 +29,16 @@ export default class Points extends Component {
     
     patchPrediction = () => {
 
-        this.props.predictions.forEach(prediction => {
+        this.props.cast.forEach(cast => {
 
-            let predictionObject = this.props.cast.find(cast => {
-                return cast.id === prediction.CastId && cast.castPlacement === prediction.PlacementPredictionId
-            })
-            
-            
+            // let predictionObject = this.props.cast.find(cast => {
+            //     return cast.id === prediction.CastId && cast.castPlacement === prediction.PlacementPredictionId
+            // })
+            let predictionObject = this.props.predictions.find(prediction => {
+                    return prediction.CastId === cast.id && prediction.PlacementPredictionId === cast.castPlacement
+                    
+                })
+            console.log(predictionObject)
             if (predictionObject) { this.switchCorrectPrediction(predictionObject) } 
             
             
