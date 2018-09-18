@@ -6,32 +6,53 @@ import {
 import './Points.css';
 import DataManager from "../../modules/Datamanager"
 
+ 
 export default class Points extends Component {
 
+    state = {
+        UserScore: null
 
-    currentUser = () => JSON.parse(sessionStorage.getItem("credentials"))
+    }
+
+
+     currentUser = JSON.parse(sessionStorage.getItem("credentials"))
 
     switchCorrectPrediction = (predictionObject) => {
+        
         this.props.patchCorrectPrediction(predictionObject.id, { correctPrediction: true })
+        
     };
 
-    switchIncorrectPrediction = (predictionObject ) => {
-        this.props.patchCorrectPrediction(predictionObject .id, { correctPrediction: false })
-    };
-
+    // switchIncorrectPrediction = (predictionObject ) => {
+    //     this.props.patchCorrectPrediction(predictionObject.id, { correctPrediction: false })
+    // };
+    
     patchPrediction = () => {
+
         this.props.predictions.forEach(prediction => {
 
             let predictionObject = this.props.cast.find(cast => {
                 return cast.id === prediction.CastId && cast.castPlacement === prediction.PlacementPredictionId
             })
-            if (predictionObject) { this.switchCorrectPrediction(predictionObject) } else
-           
-            { this.switchIncorrectPrediction(predictionObject) }
+            if (predictionObject) { this.switchCorrectPrediction(predictionObject) } 
+            
+            
+            // else { this.switchIncorrectPrediction(predictionObject) }
         })
-        let correctPredictions = this.props.getFilteredPredictionsByUser(this.state.currentUser.id)
-        console.log(correctPredictions)
-    }
+
+        
+
+       this.props.getFilteredPredictionsByUser(this.currentUser.id).then((correctPredictions) => {
+           console.log(correctPredictions)
+           if (this.currentUser !== null) {
+         this.setState({UserScore: correctPredictions.length})
+        console.log(this.state.UserScore)
+}})
+        
+        // console.log(correctPredictions.length)
+    
+        
+}
 
 
 
@@ -41,7 +62,7 @@ export default class Points extends Component {
             <React.Fragment>
                 <Card id="userScoreCard">
                     <CardBody>
-                        <CardTitle>User's Score</CardTitle>
+                        <CardTitle>{this.state.UserScore}</CardTitle>
                         <Button onClick={this.patchPrediction}>Update Score</Button>
                     </CardBody>
                 </Card>

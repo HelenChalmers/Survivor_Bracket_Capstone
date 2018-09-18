@@ -365,6 +365,20 @@
       "PlacementPredictionId": 4,
       "correctPrediction": null,
       "id": 4
+    },
+    {
+      "userId": 8,
+      "CastId": 19,
+      "PlacementPredictionId": 10,
+      "correctPrediction": null,
+      "id": 5
+    },
+    {
+      "userId": 8,
+      "CastId": 20,
+      "PlacementPredictionId": 7,
+      "correctPrediction": null,
+      "id": 6
     }
   ]
 }

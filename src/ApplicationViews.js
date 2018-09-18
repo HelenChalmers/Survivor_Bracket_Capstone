@@ -14,6 +14,7 @@ export default class ApplicationViews extends Component {
         PlacementMerge: [],
         predictions: []
     }
+    
 
     addUserPrediction = prediction => PredictionManager.post(prediction)
         .then(() => PredictionManager.getAll())
