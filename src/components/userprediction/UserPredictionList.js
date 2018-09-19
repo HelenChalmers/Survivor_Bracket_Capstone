@@ -3,6 +3,8 @@ import { Route, Redirect } from 'react-router-dom'
 import React, { Component } from 'react'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup, ListGroup, ListGroupItem } from 'reactstrap';
 import './UserPrediction.css'
+import UserPredictionCard from './UserPredictionCard';
+
 
 
 
@@ -19,6 +21,7 @@ export default class UserPredictionList extends Component {
     PlacementPredictionId: "",
     correctPrediction: false,
     newPM: []
+
 
   }
 
@@ -54,7 +57,7 @@ export default class UserPredictionList extends Component {
       correctPrediction: null
     }
 
-  
+    this.props.addUserPrediction(newPrediction)
   
     this.setState({
       userId: "",
@@ -63,9 +66,9 @@ export default class UserPredictionList extends Component {
       correctPrediction: ""
     })
     
-    this.props.addUserPrediction(newPrediction)
+    
 
-    this.setState(newPrediction);
+    
 
   }
 
@@ -91,8 +94,11 @@ export default class UserPredictionList extends Component {
               this.props.PlacementMerge.map(pm =>
                 <tr>
                   <th scope="row">{pm.Placement}</th>
-                  <td></td>
-                  <td>
+                  <td><UserPredictionCard {...this.props} 
+                  placement={pm.Placement}
+                  cast={this.props.cast}
+                  /></td>
+                  {/* <td>
                     <FormGroup>
                       <Input type="select" name="backdrop" id="castName" onChange={this.handleFieldChange}>
                         <option value="">Select a Cast Member</option>
@@ -103,11 +109,12 @@ export default class UserPredictionList extends Component {
                       </Input>
                     </FormGroup>
                   </td>
-                  {this.state.predictions.CastId !== pm.Placement &&
+              
+               {this.state.predictions.CastId !== pm.Placement &&  
 
                     <td>
                       <button type="submit" onClick={this.constructNewPrediction} className="submit_btn">Submit</button>
-                    </td>}
+                    </td>} */}
                 </tr>
               )}
 

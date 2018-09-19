@@ -357,32 +357,18 @@
   ],
   "predictions": [
     {
-      "userId": 10,
+      "userId": 1,
       "CastId": 3,
       "PlacementPredictionId": 1,
       "correctPrediction": true,
       "id": 1
     },
     {
-      "userId": 10,
-      "CastId": 1,
+      "userId": 1,
+      "CastId": 5,
       "PlacementPredictionId": 2,
-      "correctPrediction": true,
+      "correctPrediction": null,
       "id": 2
-    },
-    {
-      "userId": 10,
-      "CastId": 11,
-      "PlacementPredictionId": 9,
-      "correctPrediction": null,
-      "id": 3
-    },
-    {
-      "userId": 10,
-      "CastId": 1,
-      "PlacementPredictionId": 10,
-      "correctPrediction": null,
-      "id": 4
     }
   ]
 }
