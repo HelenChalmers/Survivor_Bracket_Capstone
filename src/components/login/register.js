@@ -1,6 +1,10 @@
 import React, { Component } from "react"
 import DataManager from "../../modules/Datamanager"
 import './Login.css'
+import { Col, Form, FormGroup, Label, Input } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+
 
 export default class Register extends Component {
     state = {
@@ -60,32 +64,32 @@ export default class Register extends Component {
             <div id="registerWrapper">
             <div id="registerForm">
                 <form onSubmit={this.registerNewUser}>
-                    <h1 className="h3 mb-3 font-weight-normal">Please Register</h1>
+                    <h1 className="h3 mb-3 font-weight-normal" id="registerheader">Please Register</h1>
                     <label htmlFor="inputFirstName">
-                        First Name
+                       
                     </label>
-                    <input onChange={this.handleFieldChange} type="first name"
+                    <Input onChange={this.handleFieldChange} type="first name"
                         id="firstName"
                         placeholder="First Name"
                         required="" autoFocus="" /><br />
                         <label htmlFor="inputLastName">
-                        Last Name
+                        
                     </label>
-                    <input onChange={this.handleFieldChange} type="lastName"
+                    <Input onChange={this.handleFieldChange} type="lastName"
                         id="lastName"
                         placeholder="Last Name"
                         required="" autoFocus="" /><br />
                     <label htmlFor="inputEmail">
-                        Email address
+                        
                     </label>
-                    <input onChange={this.handleFieldChange} type="email"
+                    <Input onChange={this.handleFieldChange} type="email"
                         id="email"
                         placeholder="Email address"
                         required="" autoFocus="" /><br />
                     <label htmlFor="inputPassword">
-                        Password
+                        
                     </label>
-                    <input onChange={this.handleFieldChange} type="password"
+                    <Input onChange={this.handleFieldChange} type="password"
                         id="password"
                         placeholder="Password"
                         required="" /><br />

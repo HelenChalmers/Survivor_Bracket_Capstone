@@ -7,11 +7,23 @@
 }
 
 #mainview {
-    
-    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
 }
 
 #pointsbox {
-    align-self: right;
+        margin-left: 800px;
+        margin-top: 50px;
+}
+
+#mainview-header {
+    margin-top: 40px; 
+    margin-left: 10px; 
+}
+
+#donatebutton {
+    margin-top: 800px;
 
 }

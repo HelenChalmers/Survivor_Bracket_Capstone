@@ -4,6 +4,7 @@ import './MainView.css'
 import Points from './pointsportal/Points'
 
 
+
 export default class MainView extends Component {
 
     componentDidMount (){
@@ -21,10 +22,12 @@ export default class MainView extends Component {
                 getFilteredPredictionsByUser={this.props.getFilteredPredictionsByUser}/>
                 </div>
                 <h1 id="mainview-header">Welcome!</h1>
+                
                 <form id="donatebutton">
                     <input type="button" value="Donate" id="donateBtn" onClick="window.location.href='https://venmo.com/'" />
                 </form>
                 </div>
+               
                 
             </React.Fragment>
         )

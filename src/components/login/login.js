@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import DataManager from "../../modules/Datamanager"
 import './Login.css'
 import Register from "./Register";
+import { Col, Form, FormGroup, Label, Input } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
@@ -66,7 +68,7 @@ export default class Login extends Component {
                 id: userObject.id
             })
         )
-        this.props.history.push("/mainview")
+        this.props.history.push("/")
         
     }
 })
@@ -84,30 +86,27 @@ export default class Login extends Component {
                     <div id="loginWrapper">
                     <div id="loginForm">
                         <form onSubmit={this.handleLogin}>
-                            <h1 className="h3 mb-3 font-weight-normal">Please Log In! New Player? Please Register</h1>
+                            <h1 className="h3 mb-3 font-weight-normal" id="loginheader">Please Log In! New Player? Please Register</h1>
                             <label htmlFor="inputEmail">
-                            Email
+                            
                             </label><br />
-                            <input onChange={this.handleFieldChange} type="email"
+                            <Input onChange={this.handleFieldChange} type="email"
                                 id="email"
                                 placeholder="Email address"
                                 required="" autoFocus="" /><br /><br />
                             <label htmlFor="inputPassword">
-                                Password
+                                
                             </label>
-                            <input onChange={this.handleFieldChange} type="password"
+                            <Input onChange={this.handleFieldChange} type="password"
                                 id="password"
                                 placeholder="Password"
                                 required="" /><br /><br />
-                            {/* <label htmlFor="rememberMe">
-                                Remember Me
-                            </label> */}
-                            {/* <input type="checkbox" name="RememberMe" value="Remember" onClick={this.changeRememberMe}/> */}
                             
-                            <button type="submit" onClick={this.handleLogin}>
+                            <button type="submit" className="loginbuttons" onClick={this.handleLogin}>
                                 Login
                             </button>
-                            <button type="submit" onClick={this.switchRegister}>
+                            <button type="submit" 
+                            className="loginbuttons"onClick={this.switchRegister}>
                                 Register
                             </button>
                         </form>

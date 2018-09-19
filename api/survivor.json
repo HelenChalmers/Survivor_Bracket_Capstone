@@ -353,6 +353,15 @@
       "bio": "Add a bio",
       "birthday": "Add your birthday",
       "id": 10
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "bio": "Add a bio",
+      "birthday": "Add your birthday",
+      "id": 11
     }
   ],
   "predictions": [
@@ -365,10 +374,31 @@
     },
     {
       "userId": 1,
-      "CastId": 5,
+      "CastId": 2,
       "PlacementPredictionId": 2,
       "correctPrediction": null,
       "id": 2
+    },
+    {
+      "userId": 1,
+      "CastId": 14,
+      "PlacementPredictionId": 3,
+      "correctPrediction": null,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "CastId": 3,
+      "PlacementPredictionId": 1,
+      "correctPrediction": null,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "CastId": 6,
+      "PlacementPredictionId": 2,
+      "correctPrediction": null,
+      "id": 5
     }
   ]
 }
