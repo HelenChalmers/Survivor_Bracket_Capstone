@@ -15,7 +15,7 @@ export default class UserPredictionCard extends Component {
         PlacementPredictionId: "",
         correctPrediction: false,
         newPM: [], 
-         disabled: false 
+        disabled: false 
 
     
       }

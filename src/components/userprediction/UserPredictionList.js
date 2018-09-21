@@ -65,11 +65,7 @@ export default class UserPredictionList extends Component {
       PlacementPredictionId: "",
       correctPrediction: ""
     })
-    
-    
-
-    
-
+  
   }
 
 
@@ -124,6 +120,3 @@ export default class UserPredictionList extends Component {
   }
 }
 
-// this.props.predictions.map(e => <p key={e.CastId} id={e.PlacementPredictionId}>{e.CastId}</p>)
-// this.props.patchCastMember(castMember.id, castMember)
-//     .then(() => 

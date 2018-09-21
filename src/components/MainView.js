@@ -11,6 +11,8 @@ export default class MainView extends Component {
         console.log(this.props)
     }
 
+    // DataManager.getAll("users").then
+
     render() {
         return (
             <React.Fragment >
@@ -24,8 +26,9 @@ export default class MainView extends Component {
                 <h1 id="mainview-header">Welcome!</h1>
                 
                 <form id="donatebutton">
-                    <input type="button" value="Donate" id="donateBtn" onClick="window.location.href='https://venmo.com/'" />
+                    <input type="button" value="Donate" id="donateBtn" onClick="href='https://venmo.com/'" />
                 </form>
+                
                 </div>
                
                 
