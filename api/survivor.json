@@ -274,115 +274,75 @@
       "id": 1
     },
     {
-      "firstName": "Jenna",
-      "lastName": "Solis",
-      "email": "jenna@gmail.com",
-      "password": "jenna",
-      "bio": "Add a bio",
-      "birthday": "Add your birthday",
-      "id": 2
-    },
-    {
-      "firstName": "Brenda",
-      "lastName": "Long",
-      "email": "brenda@gmail.com",
-      "password": "brenda",
-      "bio": "Add a bio",
-      "birthday": "Add your birthday",
-      "id": 3
-    },
-    {
       "firstName": "Madi",
       "lastName": "Peper",
       "email": "madi@gmail.com",
       "password": "madi",
       "bio": "Add a bio",
       "birthday": "Add your birthday",
-      "id": 4
-    },
-    {
-      "firstName": "Alejandro",
-      "lastName": "Font",
-      "email": "alex@gmail.com",
-      "password": "alex",
-      "bio": "Add a bio",
-      "birthday": "Add your birthday",
-      "id": 5
+      "id": 2
     },
     {
       "firstName": "Micah",
       "lastName": "Thomas",
       "email": "micah@gmail.com",
-      "password": "ruby",
+      "password": "micah",
       "bio": "Add a bio",
       "birthday": "Add your birthday",
-      "id": 6
+      "id": 3
     },
     {
-      "firstName": "Mike",
-      "lastName": "Chalmers",
-      "email": "mike@gmail.com",
-      "password": "mike",
+      "firstName": "Pat",
+      "lastName": "Denney",
+      "email": "pat@gmail.com",
+      "password": "pat",
       "bio": "Add a bio",
       "birthday": "Add your birthday",
-      "id": 7
-    },
-    {
-      "firstName": "grady",
-      "lastName": "r",
-      "email": "grady@22.com",
-      "password": "22",
-      "bio": "Add a bio",
-      "birthday": "Add your birthday",
-      "id": 8
-    },
-    {
-      "firstName": "john ",
-      "lastName": "wood",
-      "email": "Johnnathanwood@gmail.com",
-      "password": "1",
-      "bio": "Add a bio",
-      "birthday": "Add your birthday",
-      "id": 9
-    },
-    {
-      "firstName": "brenda",
-      "lastName": "Long",
-      "email": "brenda.long@nashvillesoftwareschool.com",
-      "password": "123456",
-      "bio": "Add a bio",
-      "birthday": "Add your birthday",
-      "id": 10
+      "id": 4
     }
   ],
   "predictions": [
     {
-      "userId": 10,
+      "userId": 1,
       "CastId": 3,
       "PlacementPredictionId": 1,
       "correctPrediction": true,
       "id": 1
     },
     {
-      "userId": 10,
+      "userId": 1,
       "CastId": 1,
       "PlacementPredictionId": 2,
       "correctPrediction": true,
       "id": 2
     },
     {
-      "userId": 10,
-      "CastId": 11,
-      "PlacementPredictionId": 9,
-      "correctPrediction": null,
+      "userId": 1,
+      "CastId": 5,
+      "PlacementPredictionId": 3,
+      "correctPrediction": true,
       "id": 3
     },
     {
-      "userId": 10,
-      "CastId": 1,
-      "PlacementPredictionId": 10,
+      "userId": 1,
+      "CastId": 10,
+      "PlacementPredictionId": 4,
       "correctPrediction": null,
       "id": 4
+    },
+    {
+      "userId": 1,
+      "CastId": 18,
+      "PlacementPredictionId": 10,
+      "correctPrediction": null,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "CastId": 8,
+      "PlacementPredictionId": 1,
+      "correctPrediction": null,
+      "id": 6
     }
   ]
 }

@@ -31,9 +31,7 @@ export default class Points extends Component {
 
         this.props.cast.forEach(cast => {
 
-            // let predictionObject = this.props.cast.find(cast => {
-            //     return cast.id === prediction.CastId && cast.castPlacement === prediction.PlacementPredictionId
-            // })
+
             let predictionObject = this.props.predictions.find(prediction => {
                     return prediction.CastId === cast.id && prediction.PlacementPredictionId === cast.castPlacement
                     

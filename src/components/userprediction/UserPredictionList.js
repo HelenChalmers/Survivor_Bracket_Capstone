@@ -3,6 +3,8 @@ import { Route, Redirect } from 'react-router-dom'
 import React, { Component } from 'react'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup, ListGroup, ListGroupItem } from 'reactstrap';
 import './UserPrediction.css'
+import UserPredictionCard from './UserPredictionCard';
+
 
 
 
@@ -19,6 +21,7 @@ export default class UserPredictionList extends Component {
     PlacementPredictionId: "",
     correctPrediction: false,
     newPM: []
+
 
   }
 
@@ -54,7 +57,7 @@ export default class UserPredictionList extends Component {
       correctPrediction: null
     }
 
-  
+    this.props.addUserPrediction(newPrediction)
   
     this.setState({
       userId: "",
@@ -62,11 +65,7 @@ export default class UserPredictionList extends Component {
       PlacementPredictionId: "",
       correctPrediction: ""
     })
-    
-    this.props.addUserPrediction(newPrediction)
-
-    this.setState(newPrediction);
-
+  
   }
 
 
@@ -77,12 +76,12 @@ export default class UserPredictionList extends Component {
 
     return (
       <wrapper id="predictionListWrapper">
-        <Table id="predictionTable">
+      <div id="predictionTable">
+        <Table>
           <thead>
             <tr id="predHead">
               <th className="predictionHeader">Placement</th>
-              <th></th>
-              <th className="predictionHeader">Cast Members</th>
+              <th className="predictionHeader">Make Your Prediction</th>
               <th className="predictionHeader"></th>
             </tr>
           </thead>
@@ -91,39 +90,27 @@ export default class UserPredictionList extends Component {
               this.props.PlacementMerge.map(pm =>
                 <tr>
                   <th scope="row">{pm.Placement}</th>
-                  <td></td>
-                  <td>
-                    <FormGroup>
-                      <Input type="select" name="backdrop" id="castName" onChange={this.handleFieldChange}>
-                        <option value="">Select a Cast Member</option>
-                        {
-                          this.props.cast.filter(cm => !cm.taken).map(e => <option key={e.Id} id={e.Id}>{e.castName}</option>)
-                        }
-
-                      </Input>
-                    </FormGroup>
-                  </td>
-                  {this.state.predictions.CastId !== pm.Placement &&
-
-                    <td>
-                      <button type="submit" onClick={this.constructNewPrediction} className="submit_btn">Submit</button>
-                    </td>}
+                  <td><UserPredictionCard {...this.props} 
+                  placement={pm.Placement}
+                  cast={this.props.cast}
+                  /></td>
                 </tr>
               )}
 
           </tbody>
         </Table>
+        </div>
         <ListGroup id="predictionList">
           <th className="predictionHeader">Final Prediction</th>
           <ListGroupItem>
             {
               this.props.predictions.map(e => <p key={e.CastId} id={e.PlacementPredictionId}>
                 {this.props.cast.find(c => c.id === e.CastId).castName}
+                {/* {this.props.predictions.sort(p => )} */}
               </p>)
 
             }
           </ListGroupItem>
-
         </ListGroup>
 
       </wrapper>
@@ -133,6 +120,3 @@ export default class UserPredictionList extends Component {
   }
 }
 
-// this.props.predictions.map(e => <p key={e.CastId} id={e.PlacementPredictionId}>{e.CastId}</p>)
-// this.props.patchCastMember(castMember.id, castMember)
-//     .then(() => 

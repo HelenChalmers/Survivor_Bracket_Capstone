@@ -8,7 +8,7 @@ import {
   Nav,
   NavItem,
   NavLink, } from 'reactstrap';
-  import './NavBar.css'
+  import './Navbar.css'
 
 
 export default class NavBar extends React.Component {

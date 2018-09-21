@@ -63,7 +63,7 @@ export default class ApplicationViews extends Component {
             <React.Fragment>
                 {
                     this.props.isAuthenticated() &&
-                    <Route exact path="/mainview" render={(props) => {
+                    <Route exact path="/" render={(props) => {
                         return <MainView {...props}
                         cast={this.state.cast} 
                         predictions={this.state.predictions}

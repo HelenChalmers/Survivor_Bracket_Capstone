@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+@import url('https://fonts.googleapis.com/css?family=Lalezar');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 
 #loginForm {
@@ -7,11 +10,22 @@
   width: 400px;
   height: 50%;
   /* border: 5px solid black; */
-  font-family: 'Black Ops One', cursive;
-  color: #a5bdb0;
+  /* font-family: 'Lalezar', cursive; */
+  /* font-family: 'Francois One', sans-serif; */
+  
    /* #f6de91; */
   margin-top: 50px;
   margin-left: 50px;
+}
+#loginheader {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 40px;
+  color: #a5bdb0;
+}
+.loginbuttons {
+  color: #072013;
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 #loginWrapper {
@@ -45,6 +59,18 @@
   position: absolute;
 }
 
+
+#registerheader {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 40px;
+  color: #a5bdb0;
+
+}
+
 ::placeholder {
   font-family: 'Times New Roman', Times, serif;
+}
+input {
+  
+
 }
