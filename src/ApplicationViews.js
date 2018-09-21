@@ -12,7 +12,8 @@ export default class ApplicationViews extends Component {
         cast: [],
         merge: [],
         PlacementMerge: [],
-        predictions: []
+        predictions: [], 
+        users: []
     }
     
 
@@ -43,6 +44,8 @@ export default class ApplicationViews extends Component {
             }))
             
     }
+
+    
 
     patchCastMember = (castMemberId, object) => {
         return CastManager.patch(castMemberId, object)

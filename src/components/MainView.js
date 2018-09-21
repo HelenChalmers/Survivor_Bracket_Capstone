@@ -7,11 +7,14 @@ import Points from './pointsportal/Points'
 
 export default class MainView extends Component {
 
-    componentDidMount (){
-        console.log(this.props)
-    }
+    // componentDidMount (){
+    //     console.log(this.props)
+    // }
 
-    // DataManager.getAll("users").then
+    getCurrentUser = (e) => {
+
+        
+    }
 
     render() {
         return (
