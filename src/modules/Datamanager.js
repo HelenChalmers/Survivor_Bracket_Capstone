@@ -12,13 +12,13 @@ export default Object.create(null, {
         }
     },
     post: {
-        value: function (resourcecomponent, newUser) {
+        value: function (resourcecomponent, newItem) {
             return fetch(`${remoteURL}/${resourcecomponent}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify(newUser)
+                body: JSON.stringify(newItem)
             }).then(e => e.json())
         }
     },

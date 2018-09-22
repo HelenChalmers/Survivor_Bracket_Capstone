@@ -45,8 +45,6 @@ export default class ApplicationViews extends Component {
             
     }
 
-    
-
     patchCastMember = (castMemberId, object) => {
         return CastManager.patch(castMemberId, object)
         .then(()=> CastManager.getAll())

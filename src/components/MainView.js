@@ -3,6 +3,7 @@ import NavBar from './navbar/NavBar'
 import './MainView.css'
 import Points from './pointsportal/Points'
 import Datamanager from "../modules/Datamanager";
+import Messages from "../components/messages/Messages"
 
 
 
@@ -43,6 +44,7 @@ export default class MainView extends Component {
                 </div>
                 <h3> ...Previously on Survivor!</h3>
                 <h1 id="mainview-header">Welcome {this.state.currentUser},</h1>
+                <Messages />
                 
                 <form id="donatebutton">
                     <input type="button" value="Donate" id="donateBtn" onClick="href='https://venmo.com/'" />
