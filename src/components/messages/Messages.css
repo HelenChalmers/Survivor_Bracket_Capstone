@@ -1,0 +1,6 @@
+.messages {
+    border: 30px solid black;
+    overflow-y: scroll;
+    height: 100vh;
+
+}

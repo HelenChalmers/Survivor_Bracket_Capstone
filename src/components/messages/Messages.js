@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom"
 import MessageForm from "./MessageForm"
+import MessageList from './MessageList'
 
 export default class UserPrediction extends Component {
 
@@ -9,7 +10,8 @@ export default class UserPrediction extends Component {
     render() {
         return (
             <React.Fragment>
-                <MessageForm />                
+                <MessageList />
+                <MessageForm />        
             </React.Fragment>
         )
     }

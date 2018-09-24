@@ -346,7 +346,35 @@
     }
   ],
   "messages": [
-    
-
+    {
+      "currentUser": "Helen",
+      "message": "Yalllll this is working!!",
+      "date": 1537802665157,
+      "id": 1
+    },
+    {
+      "currentUser": "Micah",
+      "message": "Girl....youre amazing!!!",
+      "date": 1537802693489,
+      "id": 2
+    },
+    {
+      "currentUser": "Helen",
+      "message": "Youre the besttt",
+      "date": 1537804289182,
+      "id": 3
+    },
+    {
+      "currentUser": "Helen",
+      "message": "Woahhhhh this is amazing ",
+      "date": 1537804310544,
+      "id": 4
+    },
+    {
+      "currentUser": "Helen",
+      "message": "Yesssssss",
+      "date": 1537804557630,
+      "id": 5
+    }
   ]
 }

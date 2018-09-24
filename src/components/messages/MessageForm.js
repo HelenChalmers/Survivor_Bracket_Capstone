@@ -5,8 +5,7 @@ import Datamanager from "../../modules/Datamanager"
 export default class MessageForm extends Component {
     state = {
         currentUser: "",
-        message: "",
-        date: ""
+        message: ""
     }
 
     addMessage = message => Datamanager.post('messages', message)
@@ -44,8 +43,8 @@ export default class MessageForm extends Component {
         }
             this.setState({
                 currentUser: "",
-                message: "",
-                date: ""})
+                message: ""
+            })
 
         this.addMessage(newMessage).then(()=> this.props.history.push("/mainview"))
         
@@ -63,7 +62,7 @@ export default class MessageForm extends Component {
                                id="addMessage"
                                placeholder="Smack Talking Only"></textarea>
                     </div>
-                    <button type="submit" onClick={this.constructNewMessage} className="btn btn-primary save-button">Save</button>
+                    <button type="submit" onClick={this.constructNewMessage} className="btn btn-primary save-button">Send</button>
                 </form>
             </React.Fragment>
         )
