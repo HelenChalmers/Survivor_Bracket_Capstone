@@ -1,12 +1,14 @@
 import React, { Component } from "react"
-import "./Message.css"
+import "./Messages.css"
+// import Datamanager from '../../modules/Datamanager'
 
 export default class MessageEdit extends Component {
 
     state = {
         username:"",
-        message:"",
-        date: ""
+        message: "",
+        date: "",
+        id: ""
 }
 
 handleFieldChange = evt => {
@@ -15,26 +17,22 @@ handleFieldChange = evt => {
     this.setState(stateToChange)
 }
 
-editMessage = (messages, id, messageObject) => Datamanager.patch(messages, id, messageObject)
-    .then(() => Datamanager.getAll(messages))
-    .then(messages => this.setState({
-        messages: messages
-    }))
+
 
 user = () => JSON.parse(sessionStorage.getItem("credentials"))
 
 editTheMessage = evt => {
     evt.preventDefault()
-
+    // console.log(this.props)
         const Editmessage = {
             // username: this.user().username,
             message: this.state.message,
-            date: this.state.date
+            // date: this.state.date
             
         }
           
-
-        this.edit(this.match.params.messageId, Editmessage).then(() => this.props.history.push("/mainview"))
+        
+        this.props.editMessage(this.props.match.params.messageId, Editmessage).then(() => this.props.history.push("/"))
         
     }
 
@@ -57,7 +55,7 @@ editTheMessage = evt => {
                                placeholder="Edited Message" defaultValue={this.state.message} />
                                
                     </div>
-                    <button type="submit" onClick={this.editTheMessage} className="btn btn-primary save-button">Save</button>
+                    <button type="submit" onClick={(evt) => this.editTheMessage(evt)} className="btn btn-primary save-button">Save</button>
                 </form>
                     </React.Fragment>
         )

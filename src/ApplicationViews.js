@@ -5,6 +5,8 @@ import UserPrediction from './components/userprediction/UserPrediction';
 import PredictionManager from './modules/PredictionManager'
 import CastManager from './modules/CastManager'
 import PMManager from './modules/PMManager'
+import MessageEdit from './components/messages/MessageEdit'
+import Datamanager from './modules/Datamanager'
 
 
 export default class ApplicationViews extends Component {
@@ -13,7 +15,8 @@ export default class ApplicationViews extends Component {
         merge: [],
         PlacementMerge: [],
         predictions: [], 
-        users: []
+        users: [], 
+        messages: []
     }
     
 
@@ -41,7 +44,13 @@ export default class ApplicationViews extends Component {
                 this.setState({
                     predictions: predictions
                 })
-            }))
+            })).then(
+                Datamanager.getAll('messages').then(messages => {
+                    this.setState({
+                        messages: messages
+                    })
+                })
+            )
             
     }
 
@@ -59,6 +68,12 @@ export default class ApplicationViews extends Component {
        return PredictionManager.getPredictionsbyUser(userId)
    }
 
+   editMessage = (id, messageObject) => Datamanager.patch('messages', id, messageObject)
+    .then(() => Datamanager.getAll('messages'))
+    .then(messages => this.setState({
+        messages: messages
+    }))
+
     render() {
         return (
             <React.Fragment>
@@ -69,7 +84,8 @@ export default class ApplicationViews extends Component {
                         cast={this.state.cast} 
                         predictions={this.state.predictions}
                         patchCorrectPrediction={this.patchCorrectPrediction} 
-                        getFilteredPredictionsByUser={this.getFilteredPredictionsByUser}/>
+                        getFilteredPredictionsByUser={this.getFilteredPredictionsByUser}
+                        messages={this.state.messages}/>
                     }} />
 
                 }
@@ -82,6 +98,13 @@ export default class ApplicationViews extends Component {
                             PlacementMerge={this.state.PlacementMerge}
                             predictions={this.state.predictions} />
                     }} />
+
+                <Route exact path="/messages-edit/:messageId(\d+)" render={(props) => {
+                        return <MessageEdit {...props}
+                        messages={this.state.messages}
+                        editMessage={this.editMessage}
+                        />
+                     }} />
 
 
                 {

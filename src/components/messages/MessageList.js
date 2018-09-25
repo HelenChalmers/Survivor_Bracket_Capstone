@@ -10,7 +10,7 @@ export default class MessageList extends Component {
     }
     componentDidMount() {
         
-        Datamanager.getAll('messages')
+        Datamanager.getAll('messages', 'messages')
           .then(messages => {
             this.setState({ messages: messages });
           })    
@@ -33,7 +33,7 @@ export default class MessageList extends Component {
                                 </div>
                                 <button type="button"
                                 className="btn btn-success"
-                            onClick={() =>  this.props.history.push(`/mainview/message-edit/${message.id}`)}
+                            onClick={() =>  this.props.history.push(`/messages-edit/${message.id}`)}
                             className="card-link">Edit</button>
                                
                             </div>

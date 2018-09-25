@@ -10,8 +10,8 @@ export default class UserPrediction extends Component {
     render() {
         return (
             <React.Fragment>
-                <MessageList />
-                <MessageForm />        
+                <MessageList {...this.props}/>
+                <MessageForm {...this.props}/>        
             </React.Fragment>
         )
     }

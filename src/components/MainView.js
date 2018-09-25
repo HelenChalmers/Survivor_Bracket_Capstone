@@ -44,11 +44,11 @@ export default class MainView extends Component {
                 </div>
                 <h3> ...Previously on Survivor!</h3>
                 <h1 id="mainview-header">Welcome {this.state.currentUser},</h1>
-                <Messages />
+                <Messages {...this.props}/>
                 
-                <form id="donatebutton">
+                {/* <form id="donatebutton">
                     <input type="button" value="Donate" id="donateBtn" onClick="href='https://venmo.com/'" />
-                </form>
+                </form> */}
                 
                 </div>
                

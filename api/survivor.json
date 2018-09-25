@@ -348,13 +348,13 @@
   "messages": [
     {
       "currentUser": "Helen",
-      "message": "Yalllll this is working!!",
+      "message": "xx",
       "date": 1537802665157,
       "id": 1
     },
     {
       "currentUser": "Micah",
-      "message": "Girl....youre amazing!!!",
+      "message": "yeah I am ",
       "date": 1537802693489,
       "id": 2
     },
@@ -375,6 +375,12 @@
       "message": "Yesssssss",
       "date": 1537804557630,
       "id": 5
+    },
+    {
+      "currentUser": "Helen",
+      "message": "yeeeessss",
+      "date": 1537886535321,
+      "id": 6
     }
   ]
 }
