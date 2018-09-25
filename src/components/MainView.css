@@ -14,16 +14,20 @@
 }
 
 #pointsbox {
-        margin-left: 800px;
-        margin-top: 50px;
+        /* margin-left: 800px;
+        margin-top: 50px; */
 }
 
 #mainview-header {
-    margin-top: 40px; 
-    margin-left: 10px; 
+    
+    font-family: 'Black Ops One', cursive;
+}
+
+h3 {
+    font-family: 'Black Ops One', cursive;
 }
 
 #donatebutton {
-    margin-top: 800px;
+    /* margin-top: 800px; */
 
 }
