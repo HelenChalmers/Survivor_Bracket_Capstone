@@ -348,39 +348,15 @@
   "messages": [
     {
       "currentUser": "Helen",
-      "message": "xx",
-      "date": 1537802665157,
+      "message": "Where are the messages?",
+      "date": 1537906325417,
       "id": 1
     },
     {
       "currentUser": "Micah",
-      "message": "yeah I am ",
-      "date": 1537802693489,
+      "message": "They are here!!!",
+      "date": 1537906375178,
       "id": 2
-    },
-    {
-      "currentUser": "Helen",
-      "message": "Youre the besttt",
-      "date": 1537804289182,
-      "id": 3
-    },
-    {
-      "currentUser": "Helen",
-      "message": "Woahhhhh this is amazing ",
-      "date": 1537804310544,
-      "id": 4
-    },
-    {
-      "currentUser": "Helen",
-      "message": "Yesssssss",
-      "date": 1537804557630,
-      "id": 5
-    },
-    {
-      "currentUser": "Helen",
-      "message": "yeeeessss",
-      "date": 1537886535321,
-      "id": 6
     }
   ]
 }
