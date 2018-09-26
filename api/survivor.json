@@ -299,56 +299,24 @@
       "bio": "Add a bio",
       "birthday": "Add your birthday",
       "id": 4
+    },
+    {
+      "firstName": "Elliot",
+      "lastName": "d",
+      "email": "elliot",
+      "password": "d",
+      "bio": "Add a bio",
+      "birthday": "Add your birthday",
+      "id": 5
     }
   ],
   "predictions": [
-    {
-      "userId": 1,
-      "CastId": 3,
-      "PlacementPredictionId": 1,
-      "correctPrediction": true,
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "CastId": 1,
-      "PlacementPredictionId": 2,
-      "correctPrediction": true,
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "CastId": 5,
-      "PlacementPredictionId": 3,
-      "correctPrediction": true,
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "CastId": 10,
-      "PlacementPredictionId": 4,
-      "correctPrediction": null,
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "CastId": 18,
-      "PlacementPredictionId": 10,
-      "correctPrediction": null,
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "CastId": 8,
-      "PlacementPredictionId": 1,
-      "correctPrediction": null,
-      "id": 6
-    }
+    
   ],
   "messages": [
     {
       "currentUser": "Helen",
-      "message": "Where are the messages?",
+      "message": "aahhhhh",
       "date": 1537906325417,
       "id": 1
     },

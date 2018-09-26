@@ -16,18 +16,27 @@ export default class ApplicationViews extends Component {
         PlacementMerge: [],
         predictions: [], 
         users: [], 
-        messages: []
+        messages: [], 
+        UserPredictions: []
     }
     
+    user = () => JSON.parse(sessionStorage.getItem("credentials"))
 
-    addUserPrediction = prediction => PredictionManager.post(prediction)
-        .then(() => PredictionManager.getAll())
-        .then(predictions => this.setState({
-            predictions: predictions
-        }))
+    addUserPrediction = prediction => 
+    PredictionManager.post(prediction)
+        .then(() =>
+            PredictionManager.getAllUserPredictions(this.user().id)
+            .then(predictions => {
+            return this.setState({
+            UserPredictions: predictions
+  })
+})
+)
 
     //this grabs the arrays to pass down (PlacementMerge and Cast)
     componentDidMount() {
+        const user = JSON.parse(sessionStorage.getItem("credentials")) || {}
+
         CastManager.getAll().then(cast => {
             this.setState({
                 cast: cast
@@ -50,7 +59,13 @@ export default class ApplicationViews extends Component {
                         messages: messages
                     })
                 })
-            )
+            ).then(
+                PredictionManager.getAllUserPredictions(user.id).then(predictions => {console.log(predictions, "AppView")
+                this.setState({
+                UserPredictions: predictions
+      })
+  })
+  )
             
     }
 
@@ -96,7 +111,9 @@ export default class ApplicationViews extends Component {
                             patchCastMember={this.patchCastMember}
                             addUserPrediction={this.addUserPrediction}
                             PlacementMerge={this.state.PlacementMerge}
-                            predictions={this.state.predictions} />
+                            predictions={this.state.predictions} 
+                            getFilteredPredictionsByUser={this.getFilteredPredictionsByUser}
+                            UserPredictions={this.state.UserPredictions}/>
                     }} />
 
                 <Route exact path="/messages-edit/:messageId(\d+)" render={(props) => {

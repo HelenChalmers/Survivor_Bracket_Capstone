@@ -27,7 +27,8 @@ export default class Points extends Component {
     //     this.props.patchCorrectPrediction(predictionObject.id, { correctPrediction: false })
     // };
     
-    patchPrediction = () => {
+    patchPrediction = (evt) => {
+        evt.preventDefault()
 
         this.props.cast.forEach(cast => {
 
@@ -36,7 +37,7 @@ export default class Points extends Component {
                     return prediction.CastId === cast.id && prediction.PlacementPredictionId === cast.castPlacement
                     
                 })
-            console.log(predictionObject)
+            
             if (predictionObject) { this.switchCorrectPrediction(predictionObject) } 
             
             
@@ -52,7 +53,7 @@ export default class Points extends Component {
         console.log(this.state.UserScore)
 }})
         
-        // console.log(correctPredictions.length)
+
     
         
 }

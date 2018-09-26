@@ -11,6 +11,11 @@ export default Object.create(null, {
             return fetch(`${remoteURL}/predictions`).then(e => e.json())
         }
     },
+    getAllUserPredictions: {
+        value: function (id) {
+            return fetch(`${remoteURL}/predictions?userId=${id}&_sort=PlacementPredictionId&_order=asc`).then(e => e.json())
+        }
+    },
     delete: {
         value: (id) => {
             return fetch(`${remoteURL}/predictions/${id}`, {

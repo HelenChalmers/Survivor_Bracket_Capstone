@@ -4,6 +4,8 @@ import React, { Component } from 'react'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup, ListGroup, ListGroupItem } from 'reactstrap';
 import './UserPrediction.css'
 import UserPredictionCard from './UserPredictionCard';
+import Datamanager from '../../modules/Datamanager'
+import PredictionManager from '../../modules/PredictionManager'
 
 
 
@@ -13,7 +15,6 @@ export default class UserPredictionList extends Component {
 
   state = {
     cast: [],
-    predictions: [],
     PlacementMerge: [],
     userId: "",
     CastId: "",
@@ -26,9 +27,7 @@ export default class UserPredictionList extends Component {
   }
 
   componentDidMount() {
-    const newPM = this.props.PlacementMerge.map(p => p)
-    this.setState({ newPM })
-
+  
   }
 
   handleFieldChange = (evt) => {
@@ -48,7 +47,7 @@ export default class UserPredictionList extends Component {
   constructNewPrediction = (e) => {
     let castMember = this.props.cast.find(c => c.castName === this.state.castName)
     castMember.taken = true
-    console.log(castMember)
+
     const newPrediction = {
 
       userId: this.user().id,
@@ -67,6 +66,24 @@ export default class UserPredictionList extends Component {
     })
   
   }
+
+
+
+
+//   getCurrentUser = (e) => {
+//     let currentUser = JSON.parse(sessionStorage.getItem("credentials"))
+
+//     Datamanager.getAll('predictions').then((result) => {
+//         let attachCurrentUser = result.find(item => {
+//             return currentUser.id === item.userId
+//         })
+//         if (attachCurrentUser) {
+//           this.props.predictions.map(e => <p key={e.CastId} id={e.PlacementPredictionId}>
+//             {this.props.cast.find(c => c.id === e.CastId).castName}
+//             </p>)
+//         }
+//     })   
+// }
 
 
 
@@ -104,9 +121,10 @@ export default class UserPredictionList extends Component {
           <th className="predictionHeader">Final Prediction</th>
           <ListGroupItem>
             {
-              this.props.predictions.map(e => <p key={e.CastId} id={e.PlacementPredictionId}>
+              
+              this.props.UserPredictions.map(e => <p key={e.CastId} id={e.PlacementPredictionId}>
                 {this.props.cast.find(c => c.id === e.CastId).castName}
-                {/* {this.props.predictions.sort(p => )} */}
+                
               </p>)
 
             }
