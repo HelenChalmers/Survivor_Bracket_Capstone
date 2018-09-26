@@ -13,7 +13,7 @@ export default Object.create(null, {
     },
     getAllUserPredictions: {
         value: function (id) {
-            return fetch(`${remoteURL}/predictions?userId=${id}`).then(e => e.json())
+            return fetch(`${remoteURL}/predictions?userId=${id}&_sort=PlacementPredictionId&_order=asc`).then(e => e.json())
         }
     },
     delete: {
