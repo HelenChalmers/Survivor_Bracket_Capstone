@@ -311,46 +311,12 @@
     }
   ],
   "predictions": [
-    {
-      "userId": 1,
-      "CastId": 3,
-      "PlacementPredictionId": 1,
-      "correctPrediction": true,
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "CastId": 20,
-      "PlacementPredictionId": 7,
-      "correctPrediction": true,
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "CastId": 19,
-      "PlacementPredictionId": 10,
-      "correctPrediction": true,
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "CastId": 9,
-      "PlacementPredictionId": 5,
-      "correctPrediction": null,
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "CastId": 7,
-      "PlacementPredictionId": 6,
-      "correctPrediction": null,
-      "id": 5
-    }
+    
   ],
   "messages": [
     {
       "currentUser": "Helen",
-      "message": "Where are the messages?",
+      "message": "aahhhhh",
       "date": 1537906325417,
       "id": 1
     },
