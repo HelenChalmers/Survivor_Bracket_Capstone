@@ -1,6 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+
 .messages {
-    border: 30px solid black;
+    border: 15px solid #a5bdaf;
     overflow-y: scroll;
-    height: 100vh;
+    height: 50vh;
+    width: 60vh;
+    word-wrap: break-word;
+    background-color: white;
+    
+
+
+}
+.messageForm {
+    /* height: 5em; */
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+}
+
+#messageHeader{
+    font-family: 'Black Ops One', cursive;
+    color: #f6df93
 
 }
