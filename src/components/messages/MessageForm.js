@@ -56,7 +56,7 @@ export default class MessageForm extends Component {
                 <form className="messageForm">
                     <div className="form-group">
                         <label htmlFor="NewMessage"></label>
-                        <textarea rows="20" cols="50" 
+                        <textarea rows="5" cols="45" 
                                className="form-control"
                                onChange={this.handleFieldChange}
                                id="addMessage"

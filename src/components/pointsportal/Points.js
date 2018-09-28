@@ -5,6 +5,7 @@ import {
 } from 'reactstrap';
 import './Points.css';
 import DataManager from "../../modules/Datamanager"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
  
 export default class Points extends Component {
@@ -67,7 +68,7 @@ export default class Points extends Component {
                 <Card id="userScoreCard">
                     <CardBody>
                         <CardTitle id="UserScore">{this.state.UserScore}</CardTitle>
-                        <Button onClick={this.patchPrediction}>Update Score</Button>
+                        <Button className="scoreBtn" onClick={this.patchPrediction}>Update Score</Button>
                     </CardBody>
                 </Card>
             </React.Fragment>

@@ -9,25 +9,42 @@
 #mainview {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 1em 1em 10em 1em;
+    background-color: #a3beaf;
 }
 
-#pointsbox {
-        /* margin-left: 800px;
-        margin-top: 50px; */
-}
+
+
 
 #mainview-header {
     
     font-family: 'Black Ops One', cursive;
+    color: #f6df93
+}
+
+h5 {
+    font-family: 'Black Ops One', cursive;
+    color: #f6df93
 }
 
 h3 {
     font-family: 'Black Ops One', cursive;
 }
 
-#donatebutton {
-    /* margin-top: 800px; */
+.Messages {
+    margin-top: 20em;
+}
+
+.bottom-caption {
+    margin-top: 55em;
 
 }
+
+#points-caption{
+    margin-top: 5em;
+}
+
+
+
+

@@ -48,8 +48,9 @@ export default class MessageList extends Component {
     render () {
         return (
             <React.Fragment>
-               
+               <h2 id="messageHeader">Messages</h2>
             <section className="messages">
+            
             {
                 this.state.messages.map(message =>
                     <div key={message.id} className="card">

@@ -122,10 +122,9 @@ export default class UserPredictionList extends Component {
           <ListGroupItem>
             {
               
-              this.props.UserPredictions.map(e => <p key={e.CastId} id={e.PlacementPredictionId}>
-                {this.props.cast.find(c => c.id === e.CastId).castName}
-                
-              </p>)
+              this.props.UserPredictions.map(e => <p key={e.CastId}>{`${e.PlacementPredictionId}.   
+                 ${this.props.cast.find(c => c.id === e.CastId).castName} 
+              `}</p>)
 
             }
           </ListGroupItem>

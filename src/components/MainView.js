@@ -34,26 +34,34 @@ export default class MainView extends Component {
 
     render() {
         return (
+            <div id="mainviewWrapper">
             <React.Fragment >
                 <NavBar />
+                
                 <div id="mainview">
+                <h1 id="mainview-header">Welcome {this.state.currentUser},</h1>
+                <div className="Messages">
+                <Messages {...this.props}/>
+                </div>
+                <div id="points-caption">
                 <div id="pointsbox">
                 <Points {...this.props} predictions={this.props.predictions}
                 patchCorrectPrediction={this.props.patchCorrectPrediction}
                 getFilteredPredictionsByUser={this.props.getFilteredPredictionsByUser}/>
                 </div>
-                <h3> ...Previously on Survivor!</h3>
-                <h1 id="mainview-header">Welcome {this.state.currentUser},</h1>
-                <Messages {...this.props}/>
-                
+                <div className="bottom-caption">
+                <h5> ...Previously on Survivor!</h5>
+                </div>
+                </div>
                 {/* <form id="donatebutton">
                     <input type="button" value="Donate" id="donateBtn" onClick="href='https://venmo.com/'" />
                 </form> */}
                 
                 </div>
-               
                 
+               
             </React.Fragment>
+            </div>
         )
     }
 }

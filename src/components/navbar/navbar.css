@@ -5,6 +5,7 @@
 #navbar{
     background-color: #f6df93;
     font-family: 'Black Ops One', cursive;
+    word-wrap: break-word;
 }
 
 #navbarbrand {
@@ -14,6 +15,7 @@
 
 .navbarHeader {
     font-weight: 200;
+    color: black;
 
 }
 
