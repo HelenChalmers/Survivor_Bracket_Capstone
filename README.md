@@ -1,4 +1,4 @@
-# Survivor Bracket: ##the app
+# Survivor Bracket: the app
 
 >Survivor Bracket will help Survivor Fans keep track of their current season predictions and scores.  A user can log in and make a prediction for the current Season 37.  As the season progesses, an admin will update the database, with final results. Each week, a user can see their updated score by clicking on the Update Score button on the main page.  Using a message feature, users are able to send messages to each other and talk smack as the show progresses.  
 
@@ -28,6 +28,8 @@
 ## Special Thanks!
 
 >Jenna, Meg, Brenda, #StudyGroup and everyone from Cohort 27 for challenging me, encouraging me and talking out code with me.
+
+###Project ERD
 
 ![ERD](https://github.com/HelenChalmers/Survivor_Bracket_Capstone/blob/fancyButtons/src/img/SurvivorErd.png)
 
