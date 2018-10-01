@@ -29,7 +29,7 @@
 
 >Jenna, Meg, Brenda, #StudyGroup and everyone from Cohort 27 for challenging me, encouraging me and talking out code with me.
 
-###Project ERD
+##Project ERD
 
 ![ERD](https://github.com/HelenChalmers/Survivor_Bracket_Capstone/blob/fancyButtons/src/img/SurvivorErd.png)
 
