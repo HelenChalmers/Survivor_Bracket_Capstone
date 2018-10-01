@@ -1,5 +1,8 @@
 import React, { Component } from "react"
 import "./Messages.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+    Button } from 'reactstrap';
 // import Datamanager from '../../modules/Datamanager'
 
 export default class MessageEdit extends Component {
@@ -55,7 +58,7 @@ editTheMessage = evt => {
                                placeholder="Edited Message" defaultValue={this.state.message} />
                                
                     </div>
-                    <button type="submit" onClick={(evt) => this.editTheMessage(evt)} className="btn btn-primary save-button">Save</button>
+                    <Button type="submit" onClick={(evt) => this.editTheMessage(evt)} className="btn btn-primary save-button">Save</Button>
                 </form>
                     </React.Fragment>
         )

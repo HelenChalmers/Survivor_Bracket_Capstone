@@ -3,6 +3,7 @@
 
 
 #navbar{
+    box-shadow: 0 8px 8px -4px dimgray;
     background-color: #f6df93;
     font-family: 'Black Ops One', cursive;
     word-wrap: break-word;
@@ -23,3 +24,4 @@
     display: flex;
     flex-wrap: wrap;
 }
+
