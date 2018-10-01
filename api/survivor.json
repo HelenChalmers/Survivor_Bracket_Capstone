@@ -311,146 +311,7 @@
     }
   ],
   "predictions": [
-    {
-      "userId": 1,
-      "CastId": 3,
-      "PlacementPredictionId": 1,
-      "correctPrediction": true,
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "CastId": 5,
-      "PlacementPredictionId": 2,
-      "correctPrediction": null,
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "CastId": 4,
-      "PlacementPredictionId": 15,
-      "correctPrediction": null,
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "CastId": 19,
-      "PlacementPredictionId": 20,
-      "correctPrediction": null,
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "CastId": 16,
-      "PlacementPredictionId": 19,
-      "correctPrediction": null,
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "CastId": 17,
-      "PlacementPredictionId": 18,
-      "correctPrediction": null,
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "CastId": 15,
-      "PlacementPredictionId": 17,
-      "correctPrediction": null,
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "CastId": 12,
-      "PlacementPredictionId": 16,
-      "correctPrediction": null,
-      "id": 8
-    },
-    {
-      "userId": 1,
-      "CastId": 6,
-      "PlacementPredictionId": 14,
-      "correctPrediction": null,
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "CastId": 14,
-      "PlacementPredictionId": 13,
-      "correctPrediction": null,
-      "id": 10
-    },
-    {
-      "userId": 1,
-      "CastId": 9,
-      "PlacementPredictionId": 12,
-      "correctPrediction": null,
-      "id": 11
-    },
-    {
-      "userId": 1,
-      "CastId": 7,
-      "PlacementPredictionId": 11,
-      "correctPrediction": null,
-      "id": 12
-    },
-    {
-      "userId": 1,
-      "CastId": 20,
-      "PlacementPredictionId": 10,
-      "correctPrediction": null,
-      "id": 13
-    },
-    {
-      "userId": 1,
-      "CastId": 8,
-      "PlacementPredictionId": 9,
-      "correctPrediction": null,
-      "id": 14
-    },
-    {
-      "userId": 1,
-      "CastId": 2,
-      "PlacementPredictionId": 3,
-      "correctPrediction": null,
-      "id": 15
-    },
-    {
-      "userId": 1,
-      "CastId": 11,
-      "PlacementPredictionId": 4,
-      "correctPrediction": null,
-      "id": 16
-    },
-    {
-      "userId": 1,
-      "CastId": 13,
-      "PlacementPredictionId": 5,
-      "correctPrediction": null,
-      "id": 17
-    },
-    {
-      "userId": 1,
-      "CastId": 1,
-      "PlacementPredictionId": 6,
-      "correctPrediction": null,
-      "id": 18
-    },
-    {
-      "userId": 1,
-      "CastId": 10,
-      "PlacementPredictionId": 7,
-      "correctPrediction": null,
-      "id": 19
-    },
-    {
-      "userId": 1,
-      "CastId": 18,
-      "PlacementPredictionId": 8,
-      "correctPrediction": null,
-      "id": 20
-    }
+    
   ],
   "messages": [
     {
@@ -470,6 +331,24 @@
       "message": "Itssss going down!!",
       "date": 1538074355960,
       "id": 3
+    },
+    {
+      "currentUser": "Micah",
+      "message": "I cannnn't believe what happppened.",
+      "date": 1538419847525,
+      "id": 4
+    },
+    {
+      "currentUser": "Helen",
+      "message": "I know....so dramatic!!",
+      "date": 1538419888110,
+      "id": 5
+    },
+    {
+      "currentUser": "Helen",
+      "message": "OMG...I can't WAIT for Thursday!",
+      "date": 1538427253845,
+      "id": 6
     }
   ]
 }

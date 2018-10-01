@@ -20,12 +20,14 @@
 #mainview-header {
     
     font-family: 'Black Ops One', cursive;
-    color: #f6df93
+    color: #f6df93;
+    text-shadow: 1px 1px 2px black; 
 }
 
 h5 {
     font-family: 'Black Ops One', cursive;
-    color: #f6df93
+    color: #f6df93;
+    text-shadow: 1px 1px 2px black;
 }
 
 h3 {

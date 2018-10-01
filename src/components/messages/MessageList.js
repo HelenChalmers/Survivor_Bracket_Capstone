@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import './Messages.css'
 import Datamanager from '../../modules/Datamanager';
+import {
+Button } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default class MessageList extends Component {
@@ -13,10 +16,10 @@ export default class MessageList extends Component {
     editUserSpecific = function(message){
         if(message.currentUser === this.state.currentUser){
             return <div>
-                 <button type="button"
+                 <Button type="button"
                                 className="btn btn-success"
                             onClick={() =>  this.props.history.push(`/messages-edit/${message.id}`)}
-                            className="card-link">Edit</button>
+                            className="card-link">Edit</Button>
                                        
                                         
             </div>
