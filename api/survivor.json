@@ -37,7 +37,7 @@
       "castBio": "40, Maintenance Manager from Watervliet, New York",
       "castImg": "",
       "tribe": "David",
-      "castPlacement": 3,
+      "castPlacement": 20,
       "id": 5
     },
     {
@@ -101,7 +101,7 @@
       "castBio": "25, Technical Writer from Denver",
       "castImg": "",
       "tribe": "David",
-      "castPlacement": 20,
+      "castPlacement": 3,
       "id": 13
     },
     {
@@ -308,10 +308,111 @@
       "bio": "Add a bio",
       "birthday": "Add your birthday",
       "id": 5
+    },
+    {
+      "firstName": "Kayla",
+      "lastName": "Reid",
+      "email": "kayla@gmail.com",
+      "password": "kayla",
+      "bio": "Add a bio",
+      "birthday": "Add your birthday",
+      "id": 6
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Mike",
+      "email": "mike@gmail.com",
+      "password": "mike",
+      "bio": "Add a bio",
+      "birthday": "Add your birthday",
+      "id": 7
     }
   ],
   "predictions": [
-    
+    {
+      "userId": 1,
+      "CastId": 3,
+      "PlacementPredictionId": 1,
+      "correctPrediction": true,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "CastId": 1,
+      "PlacementPredictionId": 2,
+      "correctPrediction": true,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "CastId": 8,
+      "PlacementPredictionId": 3,
+      "correctPrediction": null,
+      "id": 3
+    },
+    {
+      "userId": 7,
+      "CastId": 3,
+      "PlacementPredictionId": 1,
+      "correctPrediction": null,
+      "id": 4
+    },
+    {
+      "userId": 7,
+      "CastId": 5,
+      "PlacementPredictionId": 4,
+      "correctPrediction": null,
+      "id": 5
+    },
+    {
+      "userId": 7,
+      "CastId": 2,
+      "PlacementPredictionId": 2,
+      "correctPrediction": null,
+      "id": 6
+    },
+    {
+      "userId": 7,
+      "CastId": 11,
+      "PlacementPredictionId": 3,
+      "correctPrediction": null,
+      "id": 7
+    },
+    {
+      "userId": 7,
+      "CastId": 4,
+      "PlacementPredictionId": 8,
+      "correctPrediction": null,
+      "id": 8
+    },
+    {
+      "userId": 7,
+      "CastId": 13,
+      "PlacementPredictionId": 5,
+      "correctPrediction": null,
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "CastId": 3,
+      "PlacementPredictionId": 4,
+      "correctPrediction": null,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "CastId": 8,
+      "PlacementPredictionId": 5,
+      "correctPrediction": null,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "CastId": 10,
+      "PlacementPredictionId": 9,
+      "correctPrediction": null,
+      "id": 12
+    }
   ],
   "messages": [
     {
@@ -349,6 +450,18 @@
       "message": "OMG...I can't WAIT for Thursday!",
       "date": 1538427253845,
       "id": 6
+    },
+    {
+      "currentUser": "Kayla",
+      "message": "I can't belieeveee that happened!!!  ",
+      "date": 1538486312592,
+      "id": 7
+    },
+    {
+      "currentUser": "Mike",
+      "message": "I am IN!",
+      "date": 1542894650791,
+      "id": 8
     }
   ]
 }

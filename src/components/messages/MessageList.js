@@ -13,6 +13,7 @@ export default class MessageList extends Component {
         currentUser: '',
     }
 
+    //Function that makes the edit feature UserSpecific that then is called in the return where the button goes on the page.
     editUserSpecific = function(message){
         if(message.currentUser === this.state.currentUser){
             return <div>

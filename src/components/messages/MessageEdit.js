@@ -3,7 +3,7 @@ import "./Messages.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
     Button } from 'reactstrap';
-// import Datamanager from '../../modules/Datamanager'
+
 
 export default class MessageEdit extends Component {
 
@@ -26,11 +26,11 @@ user = () => JSON.parse(sessionStorage.getItem("credentials"))
 
 editTheMessage = evt => {
     evt.preventDefault()
-    // console.log(this.props)
+    
         const Editmessage = {
-            // username: this.user().username,
+            
             message: this.state.message,
-            // date: this.state.date
+            
             
         }
           

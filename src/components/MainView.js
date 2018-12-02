@@ -53,9 +53,7 @@ export default class MainView extends Component {
                 <h5> ...Previously on Survivor!</h5>
                 </div>
                 </div>
-                {/* <form id="donatebutton">
-                    <input type="button" value="Donate" id="donateBtn" onClick="href='https://venmo.com/'" />
-                </form> */}
+                
                 
                 </div>
                 

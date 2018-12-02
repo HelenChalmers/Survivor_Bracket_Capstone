@@ -24,9 +24,7 @@ export default class Points extends Component {
         
     };
 
-    // switchIncorrectPrediction = (predictionObject ) => {
-    //     this.props.patchCorrectPrediction(predictionObject.id, { correctPrediction: false })
-    // };
+    
     
     patchPrediction = (evt) => {
         evt.preventDefault()
@@ -42,7 +40,7 @@ export default class Points extends Component {
             if (predictionObject) { this.switchCorrectPrediction(predictionObject) } 
             
             
-            // else { this.switchIncorrectPrediction(predictionObject) }
+            
         })
 
         
