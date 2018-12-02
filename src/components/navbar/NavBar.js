@@ -8,7 +8,7 @@ import {
   Nav,
   NavItem,
   NavLink, } from 'reactstrap';
-  import './Navbar.css'
+  import './navbar.css'
 
 
 
