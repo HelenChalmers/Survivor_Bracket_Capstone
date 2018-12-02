@@ -1,4 +1,4 @@
-const remoteURL = "https://survivor-bracket-server.herokuapp.com/"
+const remoteURL = "http://localhost:5002"
 
 export default Object.create(null, {
     get: {
