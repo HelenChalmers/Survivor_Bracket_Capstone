@@ -34,9 +34,9 @@ Jenna, Meg, Brenda, #StudyGroup and everyone from Cohort 27 for challenging me, 
 
 ![ERD](https://github.com/HelenChalmers/Survivor_Bracket_Capstone/blob/fancyButtons/src/img/SurvivorErd.png)
 
-//## Check Out The App 
+## Check Out The App 
 
-//[The Survivor Bracket](https://survivor-bracket.herokuapp.com)
+[The Survivor Bracket](https://survivor-bracket.herokuapp.com)
   
 
 
