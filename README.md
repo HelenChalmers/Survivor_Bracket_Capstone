@@ -37,6 +37,6 @@ Jenna, Meg, Brenda, #StudyGroup and everyone from Cohort 27 for challenging me, 
 
 ### Check it out!  
 
-![The Survivor App] (https://survivor-bracket.herokuapp.com)
+![The Survivor App](https://survivor-bracket.herokuapp.com)
 
 
